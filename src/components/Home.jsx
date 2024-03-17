@@ -1048,8 +1048,8 @@ function Home() {
 
         </div>
       </div>
-      <div className="bg-blue-50">
-        <img className="" src={Framebig} alt="Logo" />
+      <div className="bg-blue-50 download-app">
+        <img className="download-img" src={Framebig} alt="Logo" />
       </div>
       <Reviewcomp />
       <Supportcomp />

@@ -207,4 +207,9 @@ transform: scale(1.1);
   gap: 40px; /* Adjust the gap between images */
   top: 100px;
 }
-
+.download-app{
+  width: 100%;
+}
+.download-img{
+  width: 100%;
+}

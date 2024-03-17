@@ -15,7 +15,7 @@ import Stats from "./stats"
 import "./Home.css"
 import Logo from "../assets/logo1.png"
 import Line from "../assets/linevector.svg"
-import Newsletter from "./Newsletter"
+import Robluxcomp from './Robluxcomp';
 import NewsletterSignup from './Newsletter';
 
 
@@ -82,8 +82,9 @@ function About() {
           <div className='omdiv'><h1 className='Om-header'>Our Mission</h1><br /><p className='om-paragraph'>Our mission is to simplify and elevate the art of gifting by providing a curated selection of digital gift cards for every occasion, delivering convenience, personalization, and delight to our users while fostering connections and spreading happiness.</p></div>
         </div>
       </div>
-      <Supportcomp/>
       <NewsletterSignup/>
+      <Supportcomp/>
+      <Robluxcomp />
   
 
       

@@ -140,6 +140,9 @@ color: #233694;
       transform: scale(0.8);
     }
   }
+
+  /* styling for the nav2 */
+
   .logo{
     height: 80px;
     width: 250px;
@@ -163,4 +166,68 @@ color: #233694;
     margin-top: 3px;
     margin-right: 10px;
     border: 1px;
+  }
+
+  /* Styles for the Newsletter section */
+  
+
+  .newsletter{
+    background-color:#2D5182;
+    width:100%;
+    height:486px;
+    padding: 8rem;
+  }
+  .wrapper{
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center
+
+  }
+  .input-wrapper{
+    position: relative;
+  }
+  .txt-input{
+    height: 76px;
+    width: 622px;
+    max-width: 100%;
+    border-radius: 12px;
+    padding-left: 2rem;
+  }
+  .subscribe-btn{
+    background-color: #233694;
+    height: 52px;
+    width: 158px;
+    border-radius: 12px;
+    position: absolute;
+    right: 12px;
+    top: 12px;
+    color: #fff;
+  }
+  .news-header{
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 40px;
+    color: #fff;
+
+  }
+  .news-p{
+    margin-top: 1rem;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    color: #fff;
+    opacity: 70%;
+  }
+  .news-p2{
+    
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    color: #fff;
+    opacity: 70%;
+  }
+  .newsletter{
+    text-align: center;
   }
