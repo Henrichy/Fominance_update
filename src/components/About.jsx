@@ -13,14 +13,23 @@ import Component3 from "../assets/Component 3.svg"
 import vector from "../assets/property1.svg"
 import Stats from "./stats"
 import "./Home.css"
+import Logo from "../assets/logo1.png"
+import Line from "../assets/linevector.svg"
+import Robluxcomp from './Robluxcomp';
+import NewsletterSignup from './Newsletter';
 
 
 function About() {
   return (
     <div>
       <Head />
-      <div className='px-4 py-4'>
-        <img src={Frameabout} alt="" />
+      <div className='px-4 py-4 logo-div'>
+        <div className='image-wrapper'>
+         <img src={Logo} className='logo'/>
+         <img src={Line} className='line' />
+         <h3 className='ab-txt'>About Us</h3>
+        </div>
+        
       </div>
       <div className='Hero-container'>
         <div className='Hero-div1'>
@@ -73,7 +82,9 @@ function About() {
           <div className='omdiv'><h1 className='Om-header'>Our Mission</h1><br /><p className='om-paragraph'>Our mission is to simplify and elevate the art of gifting by providing a curated selection of digital gift cards for every occasion, delivering convenience, personalization, and delight to our users while fostering connections and spreading happiness.</p></div>
         </div>
       </div>
+      <NewsletterSignup/>
       <Supportcomp/>
+      <Robluxcomp />
   
 
       
