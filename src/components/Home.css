@@ -77,8 +77,7 @@
   flex-wrap: wrap;
   justify-content: flex-start;
   gap: 40px; /* Adjust the gap between images */
-  top: 100px;
-
+  transition: margin-top 3s ease; /* Transition for margin-top */
 }
 
 
@@ -113,7 +112,9 @@
 
 }
 
-
+.overall{
+  overflow: hidden;
+}
 
 
 .caro{
