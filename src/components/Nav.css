@@ -5,3 +5,6 @@
     border-bottom: 2px solid #FA9218;
     transform: scale(1.1);
 }
+.not-active{
+    text-decoration: none;
+}

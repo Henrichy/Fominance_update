@@ -5,7 +5,7 @@
 /* In your CSS or SCSS file */
 @layer base {
     .font-notosans {
-      font-family: 'Noto Sans', sans-serif;
+      font-family: 'montserrat', sans-serif;
     }
   }
   
