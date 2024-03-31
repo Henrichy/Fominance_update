@@ -4,6 +4,7 @@ import BuyGiftCards from "./components/buyGiftCard";
 import Home from "./components/Home";
 import About from "./components/About";
 import Mostpopular from "./components/Mostpopular";
+import Faq from "./components/Faq"
 
 
 
@@ -16,7 +17,8 @@ function App() {
           <Route path="/" element={<BuyGiftCards />} />
           <Route path="/about" element={<About />} />
           <Route path="/mostpopularcards" element={<Mostpopular />} />
-
+          <Route path="/faq" element={<Faq/>}/>
+          
 
         </Routes>
       </Router>

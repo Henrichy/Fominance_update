@@ -22,12 +22,6 @@ import Shirt from "../assets/shirt.png"
 
 import heart_fill from "../assets/heart_fill.png"
 import heart_unfill from "../assets/heart_unfill.png"
-import Globalg from "../assets/globalg.png"
-import Giftcode from "../assets/giftcode.png"
-import Kiva from "../assets/kiva.png"
-import Kids from "../assets/kids.png"
-import Amnesty from "../assets/amnesty.png"
-import Moment from "../assets/moment.png"
 
 
 import { faUser } from '@fortawesome/free-regular-svg-icons'
@@ -35,40 +29,32 @@ import { faCartShopping, faLocationDot } from '@fortawesome/free-solid-svg-icons
 import './Home.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import Supportcomp from './Supportcomp'
-import Robluxcomp from './Robluxcomp'
+
 import Footer from './footer'
 
 function Mostpopular() {
-  const initialMarginTop = '-1200px';
-
-  const [marginTop, setMarginTop] = useState(initialMarginTop);
+  const [showContainer, setShowContainer] = useState(false);
   const [showMore, setShowMore] = useState(true);
-
-  const [marginTopTwo, setMarginTopTwo] = useState(initialMarginTop);
+  const [showContainertwo, setShowContainertwo] = useState(false);
   const [showMoretwo, setShowMoretwo] = useState(true);
-
-  const [marginTopThree, setMarginTopThree] = useState(initialMarginTop);
+  const [showContainerthree, setShowContainerthree] = useState(false);
   const [showMorethree, setShowMorethree] = useState(true);
 
-
   const toggleContainer = () => {
-    const newMarginTop = marginTop === initialMarginTop ? '0px' : initialMarginTop;
-    setMarginTop(newMarginTop);
+    setShowContainer(!showContainer);
     setShowMore(!showMore);
-  };
 
+  }
   const toggleContainertwo = () => {
-    const newMarginTopTwo = marginTopTwo === initialMarginTop ? '0px' : initialMarginTop;
-    setMarginTopTwo(newMarginTopTwo);
+    setShowContainertwo(!showContainertwo);
     setShowMoretwo(!showMoretwo);
-  };
 
+  }
   const toggleContainerthree = () => {
-    const newMarginTopThree = marginTopThree === initialMarginTop ? '0px' : initialMarginTop;
-    setMarginTopThree(newMarginTopThree);
+    setShowContainerthree(!showContainerthree);
     setShowMorethree(!showMorethree);
-  };
 
+  }
 
   return (
     <nav>
@@ -152,8 +138,8 @@ function Mostpopular() {
           </div>         
           </div>
       )}
-      <div className='overall'>
-      <div className="px-10 seeall-container" style={{ marginTop: marginTop }}>
+      {showContainer && (
+      <div className="px-10 seeall-container">
       <div className="pink w-96 pb-4">
             <img className="pinkimg" src={Hermes} alt="Logo" />
             <div className="flex justify-between mx-4 items-center text-xl font-semibold"><h4 className="text-indigo-950">The Sims 4</h4> <h3>$150</h3></div>
@@ -332,13 +318,14 @@ function Mostpopular() {
             </div>
       </div>*/}
           </div>
-          </div>
+           )
+          };
       <div className="py-8 mx-10 flex justify-center items-center">
         <h3 className="font-semibold text-2xl">
           <button
           onClick={toggleContainer}
           className="text-white font-bold rounded-lg flex justify-center items-center px-24 py-2 bg-blue-500 hover:bg-blue-700">
-            {showMore ? 'See More' : 'See Less'}
+            {showContainer ? 'See Less' : 'See More'}
           </button>
         </h3>
       </div>
@@ -394,8 +381,8 @@ function Mostpopular() {
           </div>         
           </div>
       )}
-      <div className='overall'>
-      <div className="px-10 seeall-container"  style={{ marginTop: marginTopTwo }}>
+      {showContainertwo && (
+      <div className="px-10 seeall-container">
       <div className="pink w-96 pb-4">
             <img className="pinkimg" src={Apple} alt="Logo" />
             <div className="flex justify-between mx-4 items-center text-xl font-semibold"><h4 className="text-indigo-950">The Sims 4</h4> <h3>$150</h3></div>
@@ -441,7 +428,7 @@ function Mostpopular() {
             </div>
           </div>         
           <div className="pink w-96 pb-4">
-            <img className="pinkimg" src={Globalg} alt="Logo" />
+            <img className="pinkimg" src={Netflix} alt="Logo" />
             <div className="flex justify-between mx-4 items-center text-xl font-semibold"><h4 className="text-indigo-950">The Sims 4</h4> <h3>$150</h3></div>
             <div className="flex justify-between mx-4 items-center text-sm font-semibold"><h4 className="text-indigo-950">Global</h4> <h3></h3></div>
             <div className="flex justify-between mx-4 items-center text-sm font-semibold"><h4 className="flex items-center">
@@ -456,7 +443,7 @@ function Mostpopular() {
             </div>
           </div>          
           <div className="pink w-96 pb-4">
-            <img className="pinkimg" src={Kiva} alt="Logo" />
+            <img className="pinkimg" src={Netflix} alt="Logo" />
             <div className="flex justify-between mx-4 items-center text-xl font-semibold"><h4 className="text-indigo-950">The Sims 4</h4> <h3>$150</h3></div>
             <div className="flex justify-between mx-4 items-center text-sm font-semibold"><h4 className="text-indigo-950">Global</h4> <h3></h3></div>
             <div className="flex justify-between mx-4 items-center text-sm font-semibold"><h4 className="flex items-center">
@@ -471,7 +458,7 @@ function Mostpopular() {
             </div>
           </div>    
           <div className="pink w-96 pb-4">
-            <img className="pinkimg" src={Giftcode} alt="Logo" />
+            <img className="pinkimg" src={Netflix} alt="Logo" />
             <div className="flex justify-between mx-4 items-center text-xl font-semibold"><h4 className="text-indigo-950">The Sims 4</h4> <h3>$150</h3></div>
             <div className="flex justify-between mx-4 items-center text-sm font-semibold"><h4 className="text-indigo-950">Global</h4> <h3></h3></div>
             <div className="flex justify-between mx-4 items-center text-sm font-semibold"><h4 className="flex items-center">
@@ -574,13 +561,14 @@ function Mostpopular() {
             </div>
       </div>*/}
           </div>
-          </div>
+           )
+          };
       <div className="py-8 mx-10 flex justify-center items-center">
         <h3 className="font-semibold text-2xl ">
           <button
           onClick={toggleContainertwo}
           className="text-white font-bold rounded-lg flex justify-center items-center px-24 py-2 bg-blue-500 hover:bg-blue-700">
-            {showMoretwo ? 'See More' : 'See Less'}
+            {showContainertwo ? 'See Less' : 'See More'}
           </button>
         </h3>
       </div>
@@ -635,8 +623,8 @@ function Mostpopular() {
           </div>         
           </div>
       )}
-       <div className='overall'>
-      <div className="px-10 seeall-container"  style={{ marginTop: marginTopThree }}>
+      {showContainerthree && (
+        <div className="px-10 seeall-container">
         <div className="pink w-96 pb-4">
             <img className="pinkimg" src={Netflix} alt="Logo" />
             <div className="flex justify-between mx-4 items-center text-xl font-semibold"><h4 className="text-indigo-950">The Sims 4</h4> <h3>$150</h3></div>
@@ -682,7 +670,7 @@ function Mostpopular() {
             </div>
           </div>         
           <div className="pink w-96 pb-4">
-            <img className="pinkimg" src={Kids} alt="Logo" />
+            <img className="pinkimg" src={Netflix} alt="Logo" />
             <div className="flex justify-between mx-4 items-center text-xl font-semibold"><h4 className="text-indigo-950">The Sims 4</h4> <h3>$150</h3></div>
             <div className="flex justify-between mx-4 items-center text-sm font-semibold"><h4 className="text-indigo-950">Global</h4> <h3></h3></div>
             <div className="flex justify-between mx-4 items-center text-sm font-semibold"><h4 className="flex items-center">
@@ -697,7 +685,7 @@ function Mostpopular() {
             </div>
           </div>          
           <div className="pink w-96 pb-4">
-            <img className="pinkimg" src={Amnesty} alt="Logo" />
+            <img className="pinkimg" src={Netflix} alt="Logo" />
             <div className="flex justify-between mx-4 items-center text-xl font-semibold"><h4 className="text-indigo-950">The Sims 4</h4> <h3>$150</h3></div>
             <div className="flex justify-between mx-4 items-center text-sm font-semibold"><h4 className="text-indigo-950">Global</h4> <h3></h3></div>
             <div className="flex justify-between mx-4 items-center text-sm font-semibold"><h4 className="flex items-center">
@@ -712,7 +700,7 @@ function Mostpopular() {
             </div>
           </div>    
           <div className="pink w-96 pb-4">
-            <img className="pinkimg" src={Moment} alt="Logo" />
+            <img className="pinkimg" src={Netflix} alt="Logo" />
             <div className="flex justify-between mx-4 items-center text-xl font-semibold"><h4 className="text-indigo-950">The Sims 4</h4> <h3>$150</h3></div>
             <div className="flex justify-between mx-4 items-center text-sm font-semibold"><h4 className="text-indigo-950">Global</h4> <h3></h3></div>
             <div className="flex justify-between mx-4 items-center text-sm font-semibold"><h4 className="flex items-center">
@@ -815,13 +803,14 @@ function Mostpopular() {
             </div>
       </div>*/}
           </div>
-          </div>
+           )
+          };
       <div className="py-8 mx-10 flex justify-center items-center">
         <h3 className="font-semibold text-2xl ">
           <button
           onClick={toggleContainerthree}
           className="text-white font-bold rounded-lg flex justify-center items-center px-24 py-2 bg-blue-500 hover:bg-blue-700">
-            {showMorethree ? 'See More' : 'See Less'}
+            {showContainerthree ? 'See Less' : 'See More'}
           </button>
         </h3>
       </div>
