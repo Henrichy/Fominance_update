@@ -24,7 +24,7 @@ function Head() {
     <NavLink to="/legal" activeClassName="active" className="nav text-white flex justify-center items-center h-full">
       LEGAL
     </NavLink>
-    <NavLink to="/support" activeClassName="active" className="nav text-white flex justify-center items-center h-full">
+    <NavLink to="/support/help" activeClassName="active" className="nav text-white flex justify-center items-center h-full">
       SUPPORT
     </NavLink>
   </div>

@@ -1,29 +1,35 @@
 import React from 'react'
-import UsedLogo from "../assets/UsedLogo.png"
+import form from "../assets/form.png"
 import talk1 from "../assets/talk1.png"
-import appstore from "../assets/appstore.png"
-import googleplay from "../assets/googleplay.png"
 import talk2 from "../assets/talk2.png"
 import Socialfb from "../assets/Socialfb.png"
 import Socialig from "../assets/Socialig.png"
 import Socialin from "../assets/Socialin.png"
 import Socialtwitter from "../assets/Socialtwitter.png"
-import FrameCopy from "../assets/FrameCopy.png"
+import Playst from "../assets/Playst.png"
+import appst from "../assets/appst.png"
+
 import "./Home.css"
 
 function Footer() {
   return (
     <div className="bg-indigo-900 flex flex-col justify-center items-center pt-16 pb-4 px-10 ">
     <img className="mb-2" src={talk1} alt="Logo" />
-    <img className="" src={talk2} alt="Logo" />
+    <h1 className='text-2xl text-white font-semibold'>Have your giftcard trading conveniently accessible</h1>
     <div className="flex gap-10 mt-10">
-      <img className="cursor-pointer" src={googleplay} alt="Logo" />
-      <img className="cursor-pointer" src={appstore} alt="Logo" />
-    </div>
+      <div className='bg-black rounded-2xl flex items-center px-4 py-2 text-white gap-6 text-xl'>
+        <div><img src={Playst} alt="" /></div>
+        <div className='mr-6'><small>Download it on</small> <br/> <strong>Google Play</strong> </div>
+        </div>      
+        <div className='bg-black rounded-2xl flex items-center px-4 py-2 text-white gap-6 text-xl'>
+        <div><img src={appst} alt="" /></div>
+        <div className='mr-6'><small>Download it on the</small> <br/> <strong>App Store</strong> </div>
+        </div> 
+            </div>
 
-    <div className="flex justify-around w-full mt-16">
+    <div className="flex justify-center w-full mt-16 ml-20 mb-10">
       <div className="w-1/6">
-        <img className="h-16 w-auto" src={UsedLogo} alt="Logo" />
+        <img className="h-16 w-auto" src={form} alt="Logo" />
         <div className="flex ml-2 gap-4">
           <img className="" src={Socialfb} alt="Logo" />
           <img className="" src={Socialig} alt="Logo" />
@@ -36,34 +42,32 @@ function Footer() {
         <h3 className="text-gray-400 font-semibold mb-6">COMPANY</h3>
         <h5>About Us</h5>
         <h5>FAQ</h5>
-        <h5>Blog Post</h5>
-        <h5>Review</h5>
-        <h5>Career</h5>
+
 
       </div>
       <div className="w-1/6 text-white">
-        <h3 className="text-gray-400 font-semibold mb-6">LEGAL</h3>
-        <h5>Terms and Conditions</h5>
-        <h5>Privacy Policy</h5>
+        <h3 className="text-gray-400 font-semibold mb-6">COMMUNITY</h3>
+        <h5>Blog Post</h5>
+        <h5>Become an Affiliate</h5>
       </div>
       <div className="w-1/6 text-white">
         <h3 className="text-gray-400 font-semibold mb-6">SUPPORT</h3>
-        <h5>Help</h5>
         <h5>FAQs</h5>
-        <h5>Return Policy</h5>
         <h5>Contact Us</h5>
       </div>
       <div className="w-1/6 text-white">
         <h3 className="text-gray-400 font-semibold mb-6">DEALS</h3>
         <h5>Give Always</h5>
         <h5>Discounts</h5>
-        <h5>Refer and Earn</h5>
-        <h5>Affiliate Programs</h5>
+        <h5>Reward Points</h5>
       </div>
+      
     </div>
-    
+    <div className='linef'></div>
+
     <div className='allrights'>
-      <p> ©2024 Fominance.      All rights reserved.   <a href="">  Privacy Policy.</a> <a href="">Terms and Conditions</a></p>
+     
+      <p> ©2024 Fominance.      All rights reserved. &nbsp;  <a className='under' href="">  Privacy Policy</a> &nbsp;<a className='under' href="">Terms and Conditions</a></p>
     </div>
 
     
