@@ -13,7 +13,7 @@ import "./Home.css"
 
 function Footer() {
   return (
-    <div className="bg-indigo-900 flex flex-col justify-center items-center pt-16 pb-4 px-10 ">
+    <div className="bg-footerbg flex flex-col justify-center items-center pt-16 pb-4 px-10 ">
     <img className="mb-2" src={talk1} alt="Logo" />
     <h1 className='text-2xl text-white font-semibold'>Have your giftcard trading conveniently accessible</h1>
     <div className="flex gap-10 mt-10">
@@ -40,7 +40,7 @@ function Footer() {
 
       <div className="w-1/6 text-white">
         <h3 className="text-gray-400 font-semibold mb-6">COMPANY</h3>
-        <h5>About Us</h5>
+        <a href=''>About Us</a>
         <h5>FAQ</h5>
 
 

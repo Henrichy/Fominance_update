@@ -231,3 +231,14 @@ color: #233694;
   .newsletter{
     text-align: center;
   }
+  .roblux{
+    padding-top: 4rem;
+    
+  }
+  .roblux-img{
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+  }
+  .see-more-btn{
+    margin: 3rem 0;
+  }

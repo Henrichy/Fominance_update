@@ -35,7 +35,8 @@
     
 }
 .image-containerr{
-    
+    border-top-left-radius: 10px; 
+    border-bottom-left-radius: 10px; 
     height: 398px;
     width: 641px;
 }
@@ -59,12 +60,12 @@
     font-size: 24px;
     font-weight: 500;
 }
+
 .txt-container{
     height: 284px;
     padding: 2.5rem 4rem 0 4rem;
 }
 .image{
-    border-top-left-radius: 10px; 
-    border-bottom-left-radius: 10px; 
+   
     
 }

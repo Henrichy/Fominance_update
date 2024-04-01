@@ -1,0 +1,60 @@
+diff --git a/src/components/About.jsx b/src/components/About.jsx
+index 6cb8768..1896ab5 100644
+--- a/src/components/About.jsx
++++ b/src/components/About.jsx
+@@ -11,12 +11,9 @@ import {Typewriter} from "react-simple-typewriter"
+ import Component1 from "../assets/Component 1.svg"
+ import Component3 from "../assets/Component 3.svg"
+ import vector from "../assets/property1.svg"
+-import Stats from "./stats"
++
+ import "./Home.css"
+ 
+-import Robluxcomp from './Robluxcomp';
+-import NewsletterSignup from './Newsletter';
+-import SubNav from './SubNav';
+ 
+ 
+ function About() {
+diff --git a/src/components/Faq.jsx b/src/components/Faq.jsx
+index 837c219..78113b6 100644
+--- a/src/components/Faq.jsx
++++ b/src/components/Faq.jsx
+@@ -1,7 +1,7 @@
+ import React from "react";
+ import Nav from "./Nav";
+ import Footer from "./footer";
+-import SubNav from "./SubNav";
++
+ 
+ 
+ 
+diff --git a/src/components/Mostpopular.jsx b/src/components/Mostpopular.jsx
+index 5b75bdf..854b47d 100644
+--- a/src/components/Mostpopular.jsx
++++ b/src/components/Mostpopular.jsx
+@@ -29,7 +29,7 @@ import { faCartShopping, faLocationDot } from '@fortawesome/free-solid-svg-icons
+ import './Home.css';
+ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+ import Supportcomp from './Supportcomp'
+-import Robluxcomp from './Robluxcomp'
++
+ import Footer from './footer'
+ 
+ function Mostpopular() {
+diff --git a/src/main.jsx b/src/main.jsx
+index 862f27f..a28ac8f 100644
+--- a/src/main.jsx
++++ b/src/main.jsx
+@@ -2,10 +2,10 @@ import React from 'react'
+ import ReactDOM from 'react-dom/client'
+ import App from './App.jsx'
+ import './index.css'
++import Home from './components/Home.jsx'
+ 
+ ReactDOM.createRoot(document.getElementById('root')).render(
+   <React.StrictMode>
+     <App />
+-
+   </React.StrictMode>,
+ )

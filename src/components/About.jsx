@@ -11,26 +11,18 @@ import {Typewriter} from "react-simple-typewriter"
 import Component1 from "../assets/Component 1.svg"
 import Component3 from "../assets/Component 3.svg"
 import vector from "../assets/property1.svg"
-import Stats from "./stats"
+
 import "./Home.css"
-import Logo from "../assets/logo1.png"
-import Line from "../assets/linevector.svg"
-import Robluxcomp from './Robluxcomp';
-import NewsletterSignup from './Newsletter';
+
 
 
 function About() {
   return (
     <div>
       <Head />
-      <div className='px-4 py-4 logo-div'>
-        <div className='image-wrapper'>
-         <img src={Logo} className='logo'/>
-         <img src={Line} className='line' />
-         <h3 className='ab-txt'>About Us</h3>
-        </div>
-        
-      </div>
+      {/* Convert this below div to a component  */}
+      <SubNav pageTitle="About Us"/>
+    
       <div className='Hero-container'>
         <div className='Hero-div1'>
           <h1 className='welcome-header'>Welcome to Fominance</h1>
@@ -85,7 +77,7 @@ function About() {
       <NewsletterSignup/>
       <Supportcomp/>
       <Robluxcomp />
-  
+      
 
       
       <Footer/>

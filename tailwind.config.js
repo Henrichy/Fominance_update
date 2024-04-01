@@ -8,7 +8,14 @@ export default {
     extend: {
       fontFamily: {
         sans: ['Montserrat', 'sans-serif'],
-      }
+      },
+      colors: {
+        'btnBlue' : '#23BDEE',
+        'heroBlue' : '#044AB2',
+        'footerbg' : '#121A41',
+        'platformBg': '#EBE8FF',
+        'dicoverbg': '#FFEBF1',
+        'platformHeader': '#222C5B'      },
     },
   },
   plugins: [],
