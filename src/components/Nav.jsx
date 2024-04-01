@@ -27,8 +27,19 @@ function Head() {
     <NavLink to="/Support" activeClassName="active" className="nav text-white flex justify-center items-center h-full ">
       Support
     </NavLink>
+
     <NavLink to="/Account" activeClassName="active" className="nav text-white flex justify-center items-center h-full bg-btnBlue px-[40px] py-[13px]  rounded-full font-semibold hover:bg-white hover:text-btnBlue transition ease-linear duration-[0.2s]">
       My Account
+      </NavLink>
+    <NavLink to="/about" activeClassName="active" className="nav text-white flex justify-center items-center h-full">
+      COMPANY
+    </NavLink>
+    <NavLink to="/legal" activeClassName="active" className="nav text-white flex justify-center items-center h-full">
+      LEGAL
+    </NavLink>
+    <NavLink to="/support/help" activeClassName="active" className="nav text-white flex justify-center items-center h-full">
+      SUPPORT
+
     </NavLink>
     
   </div>

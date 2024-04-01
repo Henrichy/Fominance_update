@@ -1,0 +1,41 @@
+.policy{
+    color: gray;
+}
+.might{
+    bottom: -50px;
+    position: absolute;
+    left: 5%;
+}
+.input{
+    bottom: 200px;
+    position: absolute;
+    left: 27.5%;
+    width: 45%;
+    border-radius: 25%;
+}
+.herro{
+    overflow: hidden;
+}
+.therelative{
+    width: 100%;
+}
+.image-containerrrr{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 84px;
+  width: 70%;
+  justify-content: center;
+  align-items: center;
+
+}
+.categoo{
+    height: auto;
+    width: 300px;
+}
+.bigContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #FFF9F4;
+
+}
