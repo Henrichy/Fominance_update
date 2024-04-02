@@ -3,19 +3,19 @@ import Head from "./Nav";
 // import Footer from "./footer";
 import Hero from "./Hero";
 import saly from "./../assets/saly.svg";
-import Saly2 from "./../assets/sally2.svg"
+import Saly2 from "./../assets/saly2.svg"
 
 
 function Home (){
     return(
-        <div>
+        <div className="" >
           <Head/>
           <Hero/>
 
           {/* Number 1 platform section */}
           <div>
-            <div className=" flex justify-between bg-platformBg h-[696px] w-[1550px] rounded-2xl mx-auto my-[80px] ">
-              <div className="flex-grow p-[50px]">
+            <div className=" flex justify-between bg-platformBg h-[696px] w-[1362px] rounded-2xl mx-auto my-[80px] ">
+              <div className="flex-grow pt-[50px] pl-[50px] w-[45rem]">
                 <h1 className="text-[48px] font-[500]  text-platformHeader w-[800px] leading-[62px] h-[121px]">
                   No 1 platform for Giftcard trading.
                 </h1>
@@ -43,8 +43,8 @@ function Home (){
                       </div>                    
                     </div>
                   </div>
-                  <div className=" grid grid-cols-2 my-[50px] ml-[150px]">
-                     <div className="flex items-center bg-white w-[264px] h-[66px] p-3 rounded-full">
+                  <div className=" grid grid-cols-2 my-[50px] ">
+                     <div className="flex items-center bg-white w-[264px] h-[66px] p-3 rounded-full ml-[80px]">
                       <div className="w-10 h-10 bg-uspColor rounded-full flex justify-center items-center">
                       <span className="text-[16px] font-[500] leading-[20px] text-white">03</span>
                       </div> 
@@ -52,7 +52,7 @@ function Home (){
                         <span class="text-uspColor font-bold">Seamless Payments</span>
                       </div>                     
                     </div>
-                    <div className="flex items-center bg-white w-[264px] h-[66px] p-3 rounded-full">
+                    <div className="flex items-center bg-white w-[264px] h-[66px] p-3 rounded-full ml-[80px]">
                       <div className="w-10 h-10 bg-uspColor rounded-full flex justify-center items-center">
                         <span className="text-[16px] font-[500] leading-[20px] text-white">04</span>
                       </div>
@@ -93,30 +93,42 @@ function Home (){
 
           {/* Discover more possibilities section */}
 
-          <div>
-          <div className="pink flex flex-col justify-between bg-discoverBg h-[700px] w-[1550px] rounded-2xl mx-auto my-[80px]">
-  <div className="flex justify-between flex-grow">
-    {/* first side of flex */}
-    <div className="flex-grow text-platformHeader">
-      <div className="w-[750px] h-[262px]">
-        <div className="pt-[30px] pl-[30px]">
-          <h1 className="font-[600] text-[48px] leading-[62px] mt-[10px] ml-[20px]">Discover more possibilities with Fominance</h1>
-          <h3 className="text-[24px] font-[500] mt-[20px] pt-[10px] ml-[20px]">Unlock endless gifting opportunities</h3>
-          <button className="rounded-full w-[200px] h-[60px] mt-[40px] ml-[20px] py-[13px] px-[40px] bg-btnBlue text-white text-[20px] font-[600]">Learn More</button>
-        </div>
-      </div>
-    </div>
-    {/* second side of flex */}
-    <div className="flex-grow">
-      {/* Content of the second flex side */}
-    </div>
-  </div>
-  {/* Image at the bottom left */}
-  <div className="self-start">
-    <img src={Saly2} alt="" className="rounded-bl-xl" />
-  </div>
-</div>
+          {/* parent Div */}
+          <div> 
+            {/* child div */}
+            <div className=" w-[1352px] flex justify-between bg-discoverBg rounded-2xl h-[696px] mx-auto" >
+              {/* Div below contains left side of flex */}
+              <div className="flex-grow pt-[50px]" >
+                {/* div below contains the upper content of the left side of the flex */}
+                <div className=" pl-[50px]  w-[650px] text-platformHeader" >
+                  <h1 className="font-[600] text-[40px] leading-[62px] " >
+                  Discover more possibilities with Fominance
+                  </h1>
+                  <h3 className="font-[500] text-[24px] leading-[40px] mt-[20px]">
+                  Unlock endless gifting opportunities
+                  </h3>
+                  <button className=" rounded-full w-[13rem] h-[4.0rem] bg-btnBlue px-[40px] py-[13px] font-[600] text-[20px] text-white mt-[30px]">
+                    Learn More
+                  </button>
+                </div>
+               <img src={Saly2} alt="" className="h-auto w-[840px] overflow-none mt-[29px] rounded-bl-2xl" />
+
+
+              </div>
+              {/* div below contains right side of flex */}
+              <div className="flex-grow" >
+          
+
+              </div>
+
+            </div>
+            
+          
           </div>
+
+
+          
+
         </div>
        
 
