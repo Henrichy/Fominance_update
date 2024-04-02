@@ -3,7 +3,8 @@ import Head from "./Nav";
 // import Footer from "./footer";
 import Hero from "./Hero";
 import saly from "./../assets/saly.svg";
-import Saly2 from "./../assets/saly2.svg"
+import Saly2 from "./../assets/saly2.svg";
+import check from "./../assets/check.svg"
 
 import Footer from "./footer";
 
@@ -28,7 +29,7 @@ function Home (){
                 </h2>
 
                 {/* this is the display of the cards for selling points */}
-                  <div className=" grid grid-cols-2 my-[55px]">
+                <div className=" grid grid-cols-2 my-[55px]">
                      <div className="flex items-center bg-white w-[264px] h-[66px] p-3 rounded-full">
                       <div className="w-10 h-10 bg-uspColor rounded-full flex justify-center items-center">
                       <span className="text-[16px] font-[500] leading-[20px] text-white">01</span>
@@ -102,7 +103,7 @@ function Home (){
             {/* child div */}
             <div className=" w-[1352px] flex justify-between bg-discoverBg rounded-2xl h-[696px] mx-auto" >
               {/* Div below contains left side of flex */}
-              <div className="flex-grow pt-[50px]" >
+              <div className="flex-grow pt-[50px] w-[400px] " >
                 {/* div below contains the upper content of the left side of the flex */}
                 <div className=" pl-[50px]  w-[650px] text-platformHeader" >
                   <h1 className="font-[600] text-[40px] leading-[62px] " >
@@ -115,13 +116,58 @@ function Home (){
                     Learn More
                   </button>
                 </div>
-               <img src={Saly2} alt="" className="h-auto w-[840px] overflow-none mt-[29px] rounded-bl-2xl" />
+               <img src={Saly2} alt="" className="h-auto w-[840px] overflow-none mt-[75px] rounded-bl-2xl" />
 
 
               </div>
               {/* div below contains right side of flex */}
               <div className="flex-grow" >
-          
+                <div className="mt-[100px]">
+                  <div className="flex items-center bg-white  h-[94px] p-3 rounded-2xl w-[296px]">
+                        <div className="w-[41.76px] h-[41.76px] bg-discoverpink rounded-full flex justify-center items-center ml-[40px] ">
+                        <span className="text-[16px] font-[500] leading-[20px] text-white"><img src={check} alt="" /></span>
+                        
+                        </div>
+                        <div class="flex-grow text-center text-discovertxt ">
+                          <span class=" font-[400] text-[24px] leading-[32.69px]">Send Giftcard</span>
+                        </div>                     
+                  </div>
+                  <div className="flex items-center bg-white  h-[94px] p-3 rounded-2xl mt-[50px] w-[296px]">
+                        <div className="w-[41.76px] h-[41.76px] bg-discoverpink rounded-full flex justify-center items-center ml-[40px] ">
+                        <span className="text-[16px] font-[500] leading-[20px] text-white"><img src={check} alt="" /></span>
+                        
+                        </div>
+                        <div class="flex-grow text-center text-discovertxt ">
+                          <span class=" font-[400] text-[24px] leading-[32.69px]">Send Giftcard</span>
+                        </div>                     
+                  </div>
+                  <div className="flex items-center bg-white  h-[94px] p-3 rounded-2xl mt-[50px] w-[296px]">
+                        <div className="w-[41.76px] h-[41.76px] bg-discoverpink rounded-full flex justify-center items-center ml-[40px] ">
+                        <span className="text-[16px] font-[500] leading-[20px] text-white"><img src={check} alt="" /></span>
+                        
+                        </div>
+                        <div class="flex-grow text-center text-discovertxt ">
+                          <span class=" font-[400] text-[24px] leading-[32.69px]">Send Giftcard</span>
+                        </div>                     
+                  </div>
+                  <div className="flex items-center bg-white  h-[94px] p-3 mt-[50px] rounded-2xl w-[296px]">
+                        <div className="w-[41.76px] h-[41.76px] bg-discoverpink rounded-full flex justify-center items-center ml-[40px] ">
+                        <span className="text-[16px] font-[500] leading-[20px] text-white"><img src={check} alt="" /></span>
+                        
+                        </div>
+                        <div class="flex-grow text-center text-discovertxt ">
+                          <span class=" font-[400] text-[24px] leading-[32.69px]">Send Giftcard</span>
+                        </div>                     
+                  </div>
+
+
+
+
+
+
+
+
+                </div>
 
               </div>
 
