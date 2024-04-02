@@ -1,6 +1,5 @@
 import React, {useEffect, useRef } from "react";
 import Supportcomp from './Supportcomp'
-import Robluxcomp from './Robluxcomp'
 import logo1 from "../assets/logo1.png"
 import linevector from "../assets/linevector.svg"
 import oneframe from "../assets/oneframe.png"

@@ -7,7 +7,7 @@ import Mostpopular from "./components/Mostpopular";
 import Faq from "./components/Faq"
 
 import BestDeals from "./components/BestDeals";
-import Support from "./components/Support";
+import BlogPost from "./components/Blogpost";
 
 
 
@@ -24,7 +24,7 @@ function App() {
 
           <Route path="/faq" element={<Faq/>}/>
           <Route path="/bestdeals" element={<BestDeals />} />
-          <Route path="/support/help" element={<Support />} />
+          <Route path="/community/blog" element={<BlogPost />} />
 
         </Routes>
       </Router>
