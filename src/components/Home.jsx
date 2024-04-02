@@ -4,6 +4,10 @@ import Head from "./Nav";
 import Hero from "./Hero";
 import saly from "./../assets/saly.svg";
 
+import Footer from "./footer";
+
+
+
 
 function Home (){
     return(
@@ -26,7 +30,8 @@ function Home (){
             </div>
           </div>
           
-
+<
+        <Footer />
         </div>
 
     )

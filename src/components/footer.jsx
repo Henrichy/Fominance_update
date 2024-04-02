@@ -17,11 +17,11 @@ function Footer() {
     <img className="mb-2" src={talk1} alt="Logo" />
     <h1 className='text-2xl text-white font-semibold'>Have your giftcard trading conveniently accessible</h1>
     <div className="flex gap-10 mt-10">
-      <div className='bg-black rounded-2xl flex items-center px-4 py-2 text-white gap-6 text-xl'>
+      <div className='bg-black rounded-2xl pointer flex items-center px-4 py-2 text-white gap-6 text-xl'>
         <div><img src={Playst} alt="" /></div>
         <div className='mr-6'><small>Download it on</small> <br/> <strong>Google Play</strong> </div>
         </div>      
-        <div className='bg-black rounded-2xl flex items-center px-4 py-2 text-white gap-6 text-xl'>
+        <div className='bg-black rounded-2xl pointer flex items-center px-4 py-2 text-white gap-6 text-xl'>
         <div><img src={appst} alt="" /></div>
         <div className='mr-6'><small>Download it on the</small> <br/> <strong>App Store</strong> </div>
         </div> 

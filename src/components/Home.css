@@ -217,6 +217,9 @@ transform: scale(1.1);
 .under{
   border-bottom: 1px solid white;
 }
+.pointer{
+  cursor: pointer;
+}
 .linef{
   width: 80%;
   height: 1px;
