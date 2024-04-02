@@ -3,7 +3,10 @@ import Head from "./Nav";
 // import Footer from "./footer";
 import Hero from "./Hero";
 import saly from "./../assets/saly.svg";
+
 import Footer from "./footer";
+
+
 
 
 function Home (){
@@ -27,6 +30,7 @@ function Home (){
             </div>
           </div>
           
+<
         <Footer />
         </div>
 
