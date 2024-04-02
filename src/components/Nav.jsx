@@ -5,6 +5,7 @@ import Logo from "./../assets/Used Logo.svg"
 import { Link } from "react-router-dom";
 
 function Head() {
+
   return (
     <>
     <div></div>
