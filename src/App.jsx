@@ -8,6 +8,7 @@ import Faq from "./components/Faq"
 
 import BestDeals from "./components/BestDeals";
 import BlogPost from "./components/Blogpost";
+import Affiliate from "./components/affiliate";
 
 
 
@@ -25,6 +26,7 @@ function App() {
           <Route path="/faq" element={<Faq/>}/>
           <Route path="/bestdeals" element={<BestDeals />} />
           <Route path="/community/blog" element={<BlogPost />} />
+          <Route path="/community/affiliate" element={<Affiliate />} />
 
         </Routes>
       </Router>

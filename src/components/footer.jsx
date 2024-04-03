@@ -40,26 +40,26 @@ function Footer() {
 
       <div className="w-1/6 text-white">
         <h3 className="text-gray-400 font-semibold mb-6">COMPANY</h3>
-        <a href=''>About Us</a>
-        <h5>FAQ</h5>
+        <a href=''>About Us</a><br/>
+        <a href=''>FAQ</a>
 
 
       </div>
       <div className="w-1/6 text-white">
         <h3 className="text-gray-400 font-semibold mb-6">COMMUNITY</h3>
-        <h5>Blog Post</h5>
-        <h5>Become an Affiliate</h5>
+        <a href=''>Blog Post</a><br/>
+        <a href=''>Become an Affiliate</a>
       </div>
       <div className="w-1/6 text-white">
         <h3 className="text-gray-400 font-semibold mb-6">SUPPORT</h3>
-        <h5>FAQs</h5>
-        <h5>Contact Us</h5>
+        <a href=''>FAQs</a><br/>
+        <a href=''>Contact Us</a>
       </div>
       <div className="w-1/6 text-white">
         <h3 className="text-gray-400 font-semibold mb-6">DEALS</h3>
-        <h5>Give Always</h5>
-        <h5>Discounts</h5>
-        <h5>Reward Points</h5>
+        <a href=''>Give Always</a><br/>
+        <a href=''>Discounts</a><br/>
+        <a href=''>Reward Points</a>
       </div>
       
     </div>
