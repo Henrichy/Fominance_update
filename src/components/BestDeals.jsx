@@ -5,7 +5,6 @@ import linevector from "../assets/linevector.svg"
 import oneframe from "../assets/oneframe.png"
 import giveframe from "../assets/giveframe.png"
 import buyframe from "../assets/buyframe.png"
-
 import Footer from './footer'
 import Head from './Nav'
 import './Home.css';
