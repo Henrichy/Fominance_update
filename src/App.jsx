@@ -9,6 +9,7 @@ import Faq from "./components/Faq"
 import BestDeals from "./components/BestDeals";
 import BlogPost from "./components/Blogpost";
 import Affiliate from "./components/affiliate";
+import Contactus from "./components/contactus";
 
 
 
@@ -27,6 +28,8 @@ function App() {
           <Route path="/bestdeals" element={<BestDeals />} />
           <Route path="/community/blog" element={<BlogPost />} />
           <Route path="/community/affiliate" element={<Affiliate />} />
+          <Route path="/support/contact" element={<Contactus />} />
+
 
         </Routes>
       </Router>
