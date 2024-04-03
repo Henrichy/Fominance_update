@@ -14,7 +14,7 @@ import BlogPost from "./components/Blogpost";
 
 function App() {
   return (
-    <>
+    <div className="max-w-[1512px mx-auto]" >
       <Router>
         <Routes>
           <Route path="/" element={<Home />} />
@@ -28,7 +28,7 @@ function App() {
 
         </Routes>
       </Router>
-    </>
+    </div>
   );
 }
 
