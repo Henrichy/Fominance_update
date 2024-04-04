@@ -1,0 +1,49 @@
+.thehero{
+}
+.article{
+    top: 350px;
+    position: absolute;
+    left: 32%;
+}
+.input{
+    top: 450px;
+    position: absolute;
+    left: 27.5%;
+    width: 45%;
+    border-radius: 25%;
+}
+.herro{
+    overflow: hidden;
+}
+.therelative{
+    width: 100%;
+}
+.containn{
+    background-color: rgb(243, 248, 246);
+    padding-top: 40px;
+}
+.blogg{
+    background-color: rgb(243, 248, 246);
+}
+.writeup{
+    border-bottom-left-radius: 2%;
+    border-bottom-right-radius: 2%;
+}
+.thewrite{
+    line-height: 100px;
+}
+.rounde{
+    border-top-left-radius: 2%;
+    border-top-right-radius: 2%;
+
+}
+.feature{
+    color: rgba(34, 44, 91, 1);
+}
+.house{
+    background-color: rgb(243, 248, 246);
+    
+}
+.orange{
+    color:rgba(241, 102, 7, 1);
+}

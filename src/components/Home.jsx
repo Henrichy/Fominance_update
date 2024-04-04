@@ -4,11 +4,19 @@ import Footer from "./footer";
 import Hero from "./Hero";
 import saly from "./../assets/saly.svg";
 import Saly2 from "./../assets/saly2.svg";
+
+import check from "./../assets/check.svg"
+
+
+
+
+
 import Check from "./../assets/check.svg"
 import Saly9 from "./../assets/Saly9.svg"
 import Saly10 from "./../assets/Saly10.svg"
 import Saly31 from "./../assets/Saly31.svg"
 import Saly32 from "./../assets/Saly32.svg"
+
 
 function Home (){
     return(
@@ -28,7 +36,7 @@ function Home (){
                 </h2>
 
                 {/* this is the display of the cards for selling points */}
-                  <div className=" grid grid-cols-2 my-[55px]">
+                <div className=" grid grid-cols-2 my-[55px]">
                      <div className="flex items-center bg-white w-[264px] h-[66px] p-3 rounded-full">
                       <div className="w-10 h-10 bg-uspColor rounded-full flex justify-center items-center">
                       <span className="text-[16px] font-[500] leading-[20px] text-white">01</span>
@@ -100,6 +108,7 @@ function Home (){
           {/* parent Div */}
           <div> 
             {/* child div */}
+
             <div className=" w-[1362px] flex flex-col justify-between bg-discoverBg rounded-2xl h-[696px] mx-auto" >
 
               {/* made a grid top and bottom */}
@@ -109,6 +118,7 @@ function Home (){
               <div className="flex-grow pl-[50px] pt-[50px] text-platformHeader w-[300px]">
                 <div className="">
                 <h1 className="font-[600] text-[40px] leading-[62px]  w-[650px]  " >
+
                   Discover more possibilities with Fominance
                 </h1>
                 <h3 className="font-[500] text-[24px] leading-[40px] mt-[20px] w-[720px] ">
@@ -118,12 +128,23 @@ function Home (){
                     Learn More
                   </button>
                 </div>
-                
+
+               <img src={Saly2} alt="" className="h-auto w-[840px] overflow-none mt-[75px] rounded-bl-2xl" />
+
 
 
               </div>
               <div className="flex-grow">
               <div className="flex-grow" >
+
+               
+
+
+
+
+
+
+
                   <div className="  mt-[100px] ml-[13rem]">
                      <div className="flex items-center bg-white w-[296px] h-[94px] p-6 rounded-2xl">
                       <div className="w-10 h-10 bg-discoverpink rounded-full flex justify-center items-center">
@@ -161,6 +182,7 @@ function Home (){
                 
               </div>
             </div>
+
 
               {/* BOTTOM */}
               <div className="flex-grow flex flex-col-2">
@@ -266,6 +288,7 @@ function Home (){
                   </div>
                 </div>
 
+
               </div>
            </div>
            <div className=" text-center pt-[150px]">
@@ -277,7 +300,7 @@ function Home (){
             </h3>
             
            </div>
-        
+        <Footer />
        </div>
 
     )
