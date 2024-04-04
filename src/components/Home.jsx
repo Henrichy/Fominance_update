@@ -1,19 +1,7 @@
 import React from "react";
 import Head from "./Nav";
-import Footer from "./footer";
 import Hero from "./Hero";
 import saly from "./../assets/saly.svg";
-<<<<<<< HEAD
-=======
-import Saly2 from "./../assets/saly2.svg";
-
-import check from "./../assets/check.svg"
-
-
-
->>>>>>> 23cfa30fc5a9cd29d5ed1fdfdc9fbf803d3140c5
-
-
 import Check from "./../assets/check.svg"
 import Saly9 from "./../assets/Saly9.svg"
 import Saly10 from "./../assets/Saly10.svg"
@@ -41,11 +29,6 @@ function Home (){
               </div>
             </div>
           </div>
-<<<<<<< HEAD
-          
-
-        </div>
-=======
 
           {/* Discover more possibilities section */}
 
@@ -244,9 +227,8 @@ function Home (){
             </h3>
             
            </div>
-        <Footer />
+        
        </div>
->>>>>>> 23cfa30fc5a9cd29d5ed1fdfdc9fbf803d3140c5
 
     )
 }
