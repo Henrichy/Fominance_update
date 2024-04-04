@@ -14,6 +14,10 @@ export default {
         'heroBlue' : '#044AB2',
         'footerbg' : '#121A41',
         'platformBg': '#EBE8FF',
+<<<<<<< HEAD
+        'dicoverbg': '#FFEBF1',
+        'platformHeader': '#222C5B'      },
+=======
         'discoverBg': '#FFEBF1',
         'platformHeader': '#222C5B',
         'uspColor' : '#7862FF', 
@@ -25,6 +29,7 @@ export default {
 
         
           },
+>>>>>>> 23cfa30fc5a9cd29d5ed1fdfdc9fbf803d3140c5
     },
   },
   plugins: [],
