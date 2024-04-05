@@ -21,6 +21,7 @@ export default {
         'discoverpink' : '#FFD2F4',
         'gridleft' : '#F6F4FF',
         'gridright' : '#FFF3F3',
+        'supportleft':'#FFE0C9'
         
           },
     },
