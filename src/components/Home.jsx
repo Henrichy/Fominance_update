@@ -4,11 +4,11 @@ import Footer from "./footer";
 import Hero from "./Hero";
 import saly from "./../assets/saly.svg";
 import Saly2 from "./../assets/saly2.svg";
-import Check from "./../assets/check.svg"
-import Saly9 from "./../assets/Saly9.svg"
-import Saly10 from "./../assets/Saly10.svg"
-import Saly31 from "./../assets/Saly31.svg"
-import Saly32 from "./../assets/Saly32.svg"
+import Check from "./../assets/check.svg";
+import Saly9 from "./../assets/Saly9.svg";
+import Saly10 from "./../assets/Saly10.svg";
+import Saly31 from "./../assets/Saly31.svg";
+import Saly32 from "./../assets/Saly32.svg";
 
 function Home (){
     return(
