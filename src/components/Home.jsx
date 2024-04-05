@@ -9,6 +9,7 @@ import Saly9 from "./../assets/Saly9.svg";
 import Saly10 from "./../assets/Saly10.svg";
 import Saly31 from "./../assets/Saly31.svg";
 import Saly32 from "./../assets/Saly32.svg";
+import Support from "./Supportcomp"
 
 function Home (){
     return(
@@ -61,7 +62,7 @@ function Home (){
                         <span className="text-[16px] font-[500] leading-[20px] text-white">04</span>
                       </div>
                       <div class="flex-grow text-center">
-                        <span class="text-uspColor font-bold">Promotionall Offers</span>
+                        <span class="text-uspColor font-bold">Promotional Offers</span>
                       </div> 
                     
                     </div>
@@ -277,6 +278,8 @@ function Home (){
             </h3>
             
            </div>
+           <Support/>
+           <Footer/>
         
        </div>
 
