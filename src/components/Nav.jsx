@@ -14,7 +14,7 @@ function Head() {
             <img src={Logo} alt="" />
           </Link>
          <div>
-          <input type="" placeholder="Search here" className=" w-[376px] px-[20px] py-[8px] border-solid border-white bg-heroBlue border-[1px] rounded-md placeholder-white font-light "/>
+          <input type="" placeholder="Search here" className=" w-[376px] px-[20px] py-[8px] border-solid border-white bg-heroBlue border-[1px] rounded-md placeholder-white font-light caret-white text-white"/>
          </div>
     <NavLink to="/AboutUs" activeClassName="active" className="nav text-white flex justify-center items-center h-full">
       About Us

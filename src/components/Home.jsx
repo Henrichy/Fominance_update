@@ -9,10 +9,44 @@ import Saly9 from "./../assets/Saly9.svg";
 import Saly10 from "./../assets/Saly10.svg";
 import Saly31 from "./../assets/Saly31.svg";
 import Saly32 from "./../assets/Saly32.svg";
-import Support from "./Supportcomp"
+import Support from "./Supportcomp";
+import Phones from "./../assets/phones.svg"
+import Community from "./../assets/community.svg"
+import TestimonialCarousel from "./Testimonial";
+import Jace from "./../assets/jace.svg"
+import Sophia from "./../assets/sophia.svg"
+import Abbie from "./../assets/abbie.svg"
+
+
+
+const testimonials = [
+  { name: 'Jace',
+    text: 'Absolutely love this gift card web app! Super easy to use, and the variety of gift card options is fantastic',
+    rating: 4,
+    imageUrl:Jace,
+  },
+  { name: 'Sophia',
+    text: 'Fominance is absolutely the best! i was sceptical at first, but now, i have no regrets',
+    rating: 5,
+    imageUrl:Sophia,
+  },
+  { name: 'Sophia',
+    text: 'Such a fun and convenient way to send gifts! My friends always appreciate receiving their favorite gift cards through this app. Highly recommend!',
+    rating: 5,
+    imageUrl:Sophia,
+  },
+  { name: 'Abbie',
+    text: 'Fominance is absolutely the best! i was sceptical at first, but now, i have no regrets',
+    rating: 5,
+    imageUrl:Abbie,
+  },
+  
+];
+
 
 function Home (){
     return(
+      
         <div className="" >
           <Head/>
           <Hero/>
@@ -269,14 +303,36 @@ function Home (){
 
               </div>
            </div>
-           <div className=" text-center pt-[150px]">
+           <div className=" text-center pt-[150px] text-platformHeader">
             <h1 className="font-[600] text-[48px] leading-[62px]">
             Have your Giftcard trading convinently accessible
             </h1>
             <h3 className="font-[500] text-[32px] leading-[72px] pt-[30px]">
             Download our mobile app and purchase faster
             </h3>
+            {/* download button for google and playstore */}
+            <div>
+
+            </div>
+            <div>
+              <img src={Phones} alt="" className="mx-auto" />
+            </div>
+            <div className=" bg-joinbg flex items-center justify-center py-6">
+              <img src={Community} alt="" />
+              <h1 className="ml-2 font-[800] text-[32px] leading-[40px]">Join the community! </h1>  
+              <p className="ml-2 font-[400] text-[30px] leading-[37.5px] text-joinp"> lets explore endless gifting possibilities together.</p>
+            </div>
             
+           </div>
+           {/* testimonial section */}
+           <div className=" bg-platformBg text-center pt-[50px]">
+            <h1 className=" font-[600] text-[48px] leading-[62px] ">
+            Our Customers say it best.
+            </h1>
+            <h3 className="font-[400] text-[24px] leading-[40px] mt-[30px]">
+            Why over 100,000 customers choose us.
+            </h3>
+            <TestimonialCarousel testimonials={testimonials} />
            </div>
            <Support/>
            <Footer/>

@@ -22,7 +22,7 @@ function Supportcomp() {
         <h3 className='font-[400] text-[24px] leading-[40px]'>
         Reach Out Anytime, Anywhere!
         </h3>
-        <button className='bg-btnBlue rounded-full text-white text-[20px] font-semi-bold w-[162px] h-[50px] mt-8'>
+        <button className='bg-btnBlue hover:shadow-xl transition ease-linear rounded-full text-white text-[20px] font-semi-bold w-[162px] h-[50px] mt-8'>
           Contact Us
         </button>
       </div>
