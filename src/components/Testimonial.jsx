@@ -47,17 +47,19 @@ function TestimonialCarousel({ testimonials }) {
   return (
     <div className="flex flex-col items-center mt-9">
       <div className="flex justify-center">
+      <button onClick={prevTestimonial} className="mx-7 my-auto bg-carouselB transition ease-linear hover:shadow-2xl  hover:bg-gray-300 w-[72px] h-[72px] hover:text-carouselB  text-gray-800 font-bold py-2 px-4 rounded-full">
+          <img src={Left} alt="left scroll" className='mx-auto' />
+        </button>
         <TestimonialCard testimonial={testimonials[getTestimonialIndex(-1)]} />
         <TestimonialCard testimonial={testimonials[activeIndex]} />
         <TestimonialCard testimonial={testimonials[getTestimonialIndex(1)]} />
-      </div>
-      <div className="flex mt-9 mb-9 ">
-        <button onClick={prevTestimonial} className="mx-7 bg-carouselB transition ease-linear hover:shadow-2xl  hover:bg-gray-300 w-[72px] h-[72px] hover:text-carouselB  text-gray-800 font-bold py-2 px-4 rounded-full">
-          <img src={Left} alt="left scroll" className='mx-auto' />
-        </button>
-        <button onClick={nextTestimonial} className="mx-7 bg-carouselB transition ease-linear hover:shadow-2xl hover:bg-gray-300 w-[72px] h-[72px] hover:text-carouselB text-gray-800 font-bold py-2 px-4 rounded-full">
+        <button onClick={nextTestimonial} className="mx-7 bg-carouselB my-auto transition ease-linear hover:shadow-2xl hover:bg-gray-300 w-[72px] h-[72px] hover:text-carouselB text-gray-800 font-bold py-2 px-4 rounded-full">
           <img src={Right} alt="right scroll" className='mx-auto' />
         </button>
+      </div>
+      <div className="flex mt-9 mb-9 ">
+        
+       
       </div>
     </div>
   );
