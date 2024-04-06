@@ -17,8 +17,15 @@ export default {
         'discoverBg': '#FFEBF1',
         'platformHeader': '#222C5B',
         'uspColor' : '#7862FF', 
-        'discoverpink': '#FFD2F4',
+
         'discovertxt' : '#050038',
+        'discoverpink' : '#FFD2F4',
+        'gridleft' : '#F6F4FF',
+        'gridright' : '#FFF3F3',
+        'supportleft':'#FFE0C9',
+        'joinbg' : '#F4FCFF',
+        'joinp' : '#F16607',
+        'carouselB' : '#D7E5FE'
         
           },
     },
