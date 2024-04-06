@@ -17,6 +17,7 @@ export default {
         'discoverBg': '#FFEBF1',
         'platformHeader': '#222C5B',
         'uspColor' : '#7862FF', 
+
         'discovertxt' : '#050038',
         'discoverpink' : '#FFD2F4',
         'gridleft' : '#F6F4FF',

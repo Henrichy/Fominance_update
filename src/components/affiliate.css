@@ -1,0 +1,40 @@
+.relativebox{
+    position: relative;
+    justify-content: center;
+    display: flex;
+}
+.absolutebox{
+    position: absolute;
+    bottom: 0;
+
+}
+.inputt{
+    top: 180px;
+    position: absolute;
+    left: 27.5%;
+    width: 45%;
+    border-radius: 25%;
+}
+.thebigcont{
+    background-color: rgba(238, 245, 255, 1);
+    padding: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.headin{
+    padding-top: 10px;
+    color: rgba(34, 44, 91, 1);
+    font-weight: 700;
+}
+.subhead{
+    padding-top: 10px;
+    color: rgba(34, 44, 91, 1);
+    font-weight: 500;
+
+}
+.text-center{
+color: rgba(181, 181, 181, 1);
+margin-top: 10px;
+}
