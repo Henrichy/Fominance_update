@@ -317,7 +317,7 @@ function Home (){
             <div>
               <img src={Phones} alt="" className="mx-auto" />
             </div>
-            <div className=" bg-joinbg flex items-center justify-center py-6">
+            <div className=" bg-joinbg flex items-center justify-center py-6 ">
               <img src={Community} alt="" />
               <h1 className="ml-2 font-[800] text-[32px] leading-[40px]">Join the community! </h1>  
               <p className="ml-2 font-[400] text-[30px] leading-[37.5px] text-joinp"> lets explore endless gifting possibilities together.</p>
@@ -325,7 +325,7 @@ function Home (){
             
            </div>
            {/* testimonial section */}
-           <div className=" bg-platformBg text-center pt-[50px]">
+           <div className=" bg-platformBg text-center pt-[50px] text-discovertxt mt-0">
             <h1 className=" font-[600] text-[48px] leading-[62px] ">
             Our Customers say it best.
             </h1>
