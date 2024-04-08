@@ -9,7 +9,7 @@ import Faq from "./components/Faq"
 import BestDeals from "./components/BestDeals";
 import BlogPost from "./components/Blogpost";
 import Affiliate from "./components/affiliate";
-import Contactus from "./components/contactus";
+import Cont from "./components/Cont";
 
 
 
@@ -24,11 +24,11 @@ function App() {
           <Route path="/about" element={<About />} />
           <Route path="/mostpopularcards" element={<Mostpopular />} />
 
-          <Route path="/faq" element={<Faq/>}/>
+          <Route path="/support/faq" element={<Faq/>}/>
           <Route path="/bestdeals" element={<BestDeals />} />
           <Route path="/community/blog" element={<BlogPost />} />
           <Route path="/community/affiliate" element={<Affiliate />} />
-          <Route path="/support/contact" element={<Contactus />} />
+          <Route path="/support/contact" element={<Cont />} />
 
 
         </Routes>

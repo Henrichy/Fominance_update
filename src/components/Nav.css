@@ -8,3 +8,22 @@
 .not-active{
     text-decoration: none;
 }
+.abig{
+
+}
+.relative .hideing {
+  display: none;
+}
+
+.relative:hover .hideing {
+  display: flex; /* Show the absolute class on hover */
+  transition: all 0.5s ease-out; /* Slow transition with ease-out timing function */
+}
+
+  .relative .hiing {
+    display: none;
+  }
+  
+  .relative:hover .hiing {
+    display: flex; /* Show the absolute class on hover */
+  }

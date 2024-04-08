@@ -33,9 +33,13 @@
     line-height: 100px;
 }
 .rounde{
-    border-top-left-radius: 2%;
-    border-top-right-radius: 2%;
+    border-top-left-radius: 3%;
+    border-top-right-radius: 3%;
+    
 
+}
+.rounde .writeup{
+    height: 100%;
 }
 .feature{
     color: rgba(34, 44, 91, 1);

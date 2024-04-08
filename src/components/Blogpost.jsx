@@ -6,7 +6,7 @@ import cardboard from "../assets/cardboard.png"
 import icon from "../assets/icon.png"
 import giftcardd from "../assets/giftcardd.png"
 import './blog.css'
-import Phoneimg from "../assets/phoneimg.png"
+import Phoneimg from "../assets/image201.svg"
 import article from "../assets/articlee.png"
 import handcard from "../assets/handcard.png"
 import hearty from "../assets/hearty.png"
@@ -16,7 +16,7 @@ import hearty from "../assets/hearty.png"
 
 function BlogPost() {
   return (
-    <>
+    <div className='blogg'>
     <Head />
     <div className='flex items-center justify-center relative herro'>
     <img className='w-[100%]' src={Phoneimg} alt="" />
@@ -41,51 +41,64 @@ function BlogPost() {
           </div>
           </div>
           <div>
-            <div className='blogg flex justify-center gap-20 pb-10'>
-            <div className='w-[40%] rounde '>
-    <img className='rounde' src={handcard} alt="" />
-    <div className='writeup text-2xl font-semibold bg-white pb-8 px-4'>
+           
+            <div className='blogg mb-10 flex justify-center gap-20 pb-10 h-[600px]'>
+            <div className='w-[30%] bg-white h-[600px] rounde writeup'>
+            <img className='rounde' src={handcard} alt="" />
+            <div className=' text-2xl font-semibold bg-white pb-8 px-4'>
         <h2 className=''>Top 10 Must-Have Gift Cards for Every Occasion.</h2>
         <h3 className='leading-[2] text-sm font-semibold'>Gift cards have become a popular choice for gifting, offering recipients the freedom to choose their own perfect present. 
         With countless options available, it can be challenging to narrow down the best choices. 
         Here are the top 10 must-have gift cards for...</h3>
     </div>
-</div>
+
+            </div>
 
 
-            <div className='w-[40%]'><img className='rounde' src={hearty} alt="" />
-            <div className='writeup text-2xl font-semibold bg-white pb-8 px-4'><h2 className=''>The Rise of Digital Gift Cards: Why They're Here to Stay.</h2>
-            <h3 className='leading-[2] text-sm font-semibold'>In recent years, digital 
+            <div className='w-[30%] bg-white h-[600px] rounde writeup'>
+            <img className='rounde' src={hearty} alt="" />
+            <div className=' text-2xl font-semibold bg-white pb-8 px-4'>
+        <h2 className=''>The Rise of Digital Gift Cards: Why They're Here to Stay..</h2>
+        <h3 className='leading-[2] text-sm font-semibold'>In recent years, digital 
             gift cards have surged in 
             popularity, revolutionizing the way we give and receive gifts. 
             Gone are the days of traditional paper 
             vouchers and plastic cards; digital gift cards offer 
-            convenience, flexibility, and endless possibili...</h3></div>
+            convenience, flexibility, and endless possibili...</h3>
+            <div></div>
+    </div>
+
             </div>
 
             </div>
-            <div className='blogg flex justify-center gap-20 pb-10'>
-              
-            <div className='w-[40%]'><img className='rounde' src={hearty} alt="" />
-            <div className='writeup text-2xl font-semibold bg-white pb-8 px-4'><h2 className=''>The Rise of Digital Gift Cards: Why They're Here to Stay.</h2>
-            <h3 className='leading-[2] text-sm font-semibold'>In recent years, digital 
+            <div className='blogg flex justify-center gap-20 mb-20 max-h-[600px]'>
+            <div className='w-[30%] bg-white h-[600px] rounde writeup'>
+            <img className='rounde' src={hearty} alt="" />
+            <div className=' text-2xl font-semibold bg-white pb-8 px-4'>
+        <h2 className=''>The Rise of Digital Gift Cards: Why They're Here to Stay..</h2>
+        <h3 className='leading-[2] text-sm font-semibold'>In recent years, digital 
             gift cards have surged in 
             popularity, revolutionizing the way we give and receive gifts. 
             Gone are the days of traditional paper 
             vouchers and plastic cards; digital gift cards offer 
-            convenience, flexibility, and endless possibili...</h3></div>
+            convenience, flexibility, and endless possibili...</h3>
+            <div></div>
+    </div>
+
             </div>
-            <div className='w-[40%] rounde '>
-    <img className='rounde' src={handcard} alt="" />
-    <div className='writeup text-2xl font-semibold bg-white pb-8 px-4'>
+
+    <div className='w-[30%] bg-white h-[600px] rounde writeup'>
+            <img className='rounde' src={handcard} alt="" />
+            <div className=' text-2xl font-semibold bg-white pb-8 px-4'>
         <h2 className=''>Top 10 Must-Have Gift Cards for Every Occasion.</h2>
         <h3 className='leading-[2] text-sm font-semibold'>Gift cards have become a popular choice for gifting, offering recipients the freedom to choose their own perfect present. 
         With countless options available, it can be challenging to narrow down the best choices. 
         Here are the top 10 must-have gift cards for...</h3>
     </div>
-</div>
 
             </div>
+</div>
+
           </div>
           <div className='house px-10 pb-14'>
             <h1 className='text-3xl font-semibold feature mb-6'>Featured Update</h1>
@@ -112,7 +125,7 @@ function BlogPost() {
             </div>
           </div>
     <Footer />
-    </>
+    </div>
   )
 }
 export default BlogPost;

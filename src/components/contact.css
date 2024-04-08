@@ -6,6 +6,12 @@
     justify-content: center;
     gap: 40px;
 }
-.rounded-md{
+.toround{
     border: 2px solid gray;
+}
+.rela{
+    overflow: hidden;
+}
+.thebox{
+    background-color: rgb(199, 200, 202);
 }
