@@ -25,8 +25,8 @@ export default {
         'supportleft':'#FFE0C9',
         'joinbg' : '#F4FCFF',
         'joinp' : '#F16607',
-        'carouselB' : '#D7E5FE'
-        
+        'carouselB' : '#D7E5FE',
+        'buttoncolor' :'#353131'        
           },
     },
   },
