@@ -1,7 +1,6 @@
 import React from 'react'
 import form from "../assets/form.png"
 import talk1 from "../assets/talk1.png"
-import talk2 from "../assets/talk2.png"
 import Socialfb from "../assets/Socialfb.png"
 import Socialig from "../assets/Socialig.png"
 import Socialin from "../assets/Socialin.png"
