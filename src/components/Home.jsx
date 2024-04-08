@@ -7,8 +7,6 @@ import AllOne from "./all"
 import Usp2 from "./usp2";
 import Support from "./Supportcomp";
 import Download from "./download"
-
-
 import TestimonialCarousel from "./Testimonial";
 import Jace from "./../assets/jace.svg"
 import Sophia from "./../assets/sophia.svg"
@@ -58,8 +56,8 @@ function Home (){
            {/* testimonial section */}
           <TestimonialCarousel testimonials={testimonials} />
           {/* download button */}
-           <Support/>
-           <Footer/>
+          <Support/>
+          <Footer/>
         
        </div>
 
