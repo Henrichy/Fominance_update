@@ -17,7 +17,7 @@ export default {
         'discoverBg': '#FFEBF1',
         'platformHeader': '#222C5B',
         'uspColor' : '#7862FF', 
-
+        'colorednavbg':'#08C1F9',
         'discovertxt' : '#050038',
         'discoverpink' : '#FFD2F4',
         'gridleft' : '#F6F4FF',
@@ -25,8 +25,10 @@ export default {
         'supportleft':'#FFE0C9',
         'joinbg' : '#F4FCFF',
         'joinp' : '#F16607',
-        'carouselB' : '#D7E5FE'
-        
+        'carouselB' : '#D7E5FE',
+        'buttoncolor' :'#353131',
+        'abtHeroH' : '#050038',
+        'abtHeroP': '#3E4044',    
           },
     },
   },

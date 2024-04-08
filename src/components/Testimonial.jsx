@@ -18,7 +18,7 @@ function TestimonialCard({ testimonial }) {
   }
 
   return (
-    <div className="max-w-sm text-left rounded-2xl h-[407px] w-[366px] overflow-hidden ml-9 shadow-lg p-10 bg-white m-2 flex flex-col ">
+    <div className="max-w-sm text-left rounded-2xl h-[407px] w-[366px] overflow-hidden ml-9 shadow-lg p-10 bg-white m-2 flex flex-col  ">
       <div className="text-lg mb-2">{stars}</div>
       <p className="text-gray-700 text-base mb-4 font-[400] text-[22px] mt-5">{testimonial.text}</p>
       <hr className="mt-auto mb-7" />
@@ -45,19 +45,31 @@ function TestimonialCarousel({ testimonials }) {
   const prevTestimonial = () => setActiveIndex(getTestimonialIndex(-1));
 
   return (
-    <div className="flex flex-col items-center mt-9">
-      <div className="flex justify-center">
-        <TestimonialCard testimonial={testimonials[getTestimonialIndex(-1)]} />
-        <TestimonialCard testimonial={testimonials[activeIndex]} />
-        <TestimonialCard testimonial={testimonials[getTestimonialIndex(1)]} />
-      </div>
-      <div className="flex mt-9 mb-9 ">
-        <button onClick={prevTestimonial} className="mx-7 bg-carouselB transition ease-linear hover:shadow-2xl  hover:bg-gray-300 w-[72px] h-[72px] hover:text-carouselB  text-gray-800 font-bold py-2 px-4 rounded-full">
-          <img src={Left} alt="left scroll" className='mx-auto' />
-        </button>
-        <button onClick={nextTestimonial} className="mx-7 bg-carouselB transition ease-linear hover:shadow-2xl hover:bg-gray-300 w-[72px] h-[72px] hover:text-carouselB text-gray-800 font-bold py-2 px-4 rounded-full">
-          <img src={Right} alt="right scroll" className='mx-auto' />
-        </button>
+    <div className='bg-platformBg'>
+        <div className="  text-center pt-[50px] text-discovertxt mt-0">
+            <h1 className=" font-[600] text-[48px] leading-[62px] ">
+            Our Customers say it best.
+            </h1>
+            <h3 className="font-[400] text-[24px] leading-[40px] mt-[30px]">
+            Why over 100,000 customers choose us.
+            </h3>            
+           </div>
+      <div className="flex flex-col items-center mt-9">
+        <div className="flex justify-center">
+        <button onClick={prevTestimonial} className="mx-7 my-auto bg-carouselB transition ease-linear hover:shadow-2xl  hover:bg-gray-300 w-[72px] h-[72px] hover:text-carouselB  text-gray-800 font-bold py-2 px-4 rounded-full">
+            <img src={Left} alt="left scroll" className='mx-auto' />
+          </button>
+          <TestimonialCard testimonial={testimonials[getTestimonialIndex(-1)]} />
+          <TestimonialCard testimonial={testimonials[activeIndex]} />
+          <TestimonialCard testimonial={testimonials[getTestimonialIndex(1)]} />
+          <button onClick={nextTestimonial} className="mx-7 bg-carouselB my-auto transition ease-linear hover:shadow-2xl hover:bg-gray-300 w-[72px] h-[72px] hover:text-carouselB text-gray-800 font-bold py-2 px-4 rounded-full">
+            <img src={Right} alt="right scroll" className='mx-auto' />
+          </button>
+        </div>
+        <div className="flex mt-9 mb-9 ">
+          
+        
+        </div>
       </div>
     </div>
   );
