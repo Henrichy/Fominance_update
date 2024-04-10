@@ -6,7 +6,7 @@ import Globe from "./../assets/globe.svg"
 const aboutHero = () => {
   return (
     <div className=''>
-      <div className=' bg-colorednavbg text-center mt-[0px]'>  
+      <div className=' bg-colorednavbg text-center mt-[0px] pt-[100px]'>  
         <h1 className='text-abtHeroH font-[500] text-[64px] leading-[80px] py-6  '>
         Transforming the world of gifting.
         </h1>
@@ -19,20 +19,8 @@ const aboutHero = () => {
         <div className='flex justify-between '>
           <img className="" src={Saly1}  alt="" />
           <img className="" src={Saly2} alt="" />
-          <img className=" mr-[150px] mb-[auto] " src={Globe} alt="" />
+          <img className=" mr-[80px] mb-[auto] " src={Globe} alt="" />
         </div>
-      </div>
-      <div className=''>
-        <div className=' bg-platformBg h-[696px] w-[1362px] mx-auto rounded-2xl my-[50px] flex'>
-          <div>
-            <h1>
-              
-            </h1>
-          </div>
-          <div>
-
-          </div>
-        </div> 
       </div>
     </div>
   )

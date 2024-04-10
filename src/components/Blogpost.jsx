@@ -22,7 +22,7 @@ function BlogPost() {
     <img className='w-[100%]' src={Phoneimg} alt="" />
     <img className='article' src={article} alt="" />
     <div className='input'>
-        <div className="therelative relative flex items-center bg-white flex rounded-lg items-center justify-around px-4 py-2 gap-2">
+        <div className="therelative relative  bg-white flex rounded-lg items-center justify-around px-4 py-2 gap-2">
             <img className="h-4 w-auto absolute left-4 top-2.2" src={icon} alt="Logo" />
             <input type="text" className="focus:outline-none ml-6 w-full"
               placeholder="Enter topic here"
@@ -32,7 +32,7 @@ function BlogPost() {
           </div>
     </div>
     <div className='flex justify-center items-center containn'>
-        <div className="w-[40%] relative flex items-center bg-white flex rounded-lg items-center justify-around px-4 py-2 gap-2 mb-10">
+        <div className="w-[40%] relative  bg-white flex rounded-lg items-center justify-around px-4 py-2 gap-2 mb-10">
             <img className="h-4 w-auto absolute left-4 top-2.2" src={icon} alt="Logo" />
             <input type="text" className="focus:outline-none ml-6 w-full"
               placeholder="Enter topic here"
