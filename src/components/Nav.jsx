@@ -22,12 +22,34 @@ function Head() {
     <NavLink to="/Giftcards" activeClassName="active" className="nav text-white flex justify-center items-center h-full">
       Giftcards
     </NavLink>
-    <NavLink to="/community" activeClassName="active" className="nav text-white flex justify-center items-center h-full">
-      Community
-    </NavLink>
-    <NavLink to="/Support" activeClassName="active" className="nav text-white flex justify-center items-center h-full ">
-      Support
-    </NavLink>
+    <div className="py-[20px] relative flex justify-center">
+  <NavLink
+    to="/community/blog"
+    activeClassName="active"
+    className="nav text-white flex justify-center items-center h-full relative" // Add relative class here
+  >
+    Community
+  </NavLink>
+  <div className="absolute bg-white px-8 py-2 rounded-md hideing flex justify-between gap-6 bottom-[-35px] text-lg">
+    <a href="/community/affiliate">Affiliate</a>
+    <a href="/community/blog">Blog</a>
+  </div>
+</div>
+
+<div className="py-[20px] relative flex justify-center">
+  <NavLink
+    to="/support/contact"
+    activeClassName="active"
+    className="nav text-white flex justify-center items-center h-full relative" // Add relative class here
+  >
+    Support
+  </NavLink>
+  <div className="absolute bg-white px-8 py-2 rounded-md hiing flex justify-between gap-6 bottom-[-35px] text-lg">
+    <a href="/support/contact">Contact</a>
+    <a href="/support/faq">Faq</a>
+  </div>
+</div>
+
 
     <NavLink to="/Account" activeClassName="active" className=" text-white flex justify-center items-center h-full bg-btnBlue px-[40px] py-[13px]  rounded-full font-semibold hover:bg-white hover:text-btnBlue transition ease-linear duration-[0.2s]">
       My Account
@@ -39,4 +61,3 @@ function Head() {
   )
 }
 export default Head;
-

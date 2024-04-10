@@ -1,6 +1,12 @@
 import React from "react";
-import Nav from "./Nav";
 import Footer from "./footer";
+import Head from "./Nav";
+import sallyA from "../assets/Saly14.svg"
+import icon from "../assets/icon.png"
+
+import './affiliate.css'
+import './blog.css'
+import './Faq.css'
 
 
 
@@ -9,26 +15,25 @@ import Footer from "./footer";
 function Faq (){
     return (
         <>
-        <Nav/>
-        <SubNav pageTitle="FAQ"/>
-    
-        <div className="bg-orange-50   " >
-            <div className="mx-16 py-20">
-                <h1 className=" text-blue-800 font-bold text-4xl ">Frequently asked questions.</h1>
-            
-            <p className="py-5">We Have Answers to Your Most Common Questions: From how to purchase gift cards to redeeming them, managing your account, and more, we're here to provide detailed solutions for every query, ensuring your experience is seamless and hassle-free.</p>
-           
-            </div>
-             {/* make a grid and input the img and txt */}
-            <div className=" grid grid-cols-1 gep-4">
-                <div>
-                    <h1>grid 1</h1>
-                </div>
-                <div>
-                    <h1>grid 2</h1>
-                </div>
-            </div>
+        <Head /> 
+       
+        <div className=' theboxfaq flex flex-col h-[750px] bg-cover bg-center'>
+            <div className='relative justify-center flex bg-cover bg-center h-64 w-full'>
+            <img className='absolute w-[100%] top-0 h-[750px] overflow-hidden ' src={sallyA} alt="" />
+            <h1 className='absolute flex text-gray-700 font-bold text-5xl top-[50px]'>How might we <h2 className="text-orange-300">&nbsp; help you?</h2></h1>
+
+            <div className='inputt'>
+        <div className="therelative relative flex items-center bg-white rounded-lg  justify-around px-4 py-2 gap-2">
+            <img className="h-4 w-auto absolute left-4 top-2.2" src={icon} alt="Logo" />
+            <input type="text" className="focus:outline-none ml-6 w-full"
+              placeholder="Enter your question here"
+            />
+            <button className="bg-blue-600 h-8 pl-3 pr-3 text-white rounded-lg">Search</button>
+          </div>
+          </div>
+      
         </div>
+        </div>     
         <Footer/>
         </>
     );

@@ -9,9 +9,9 @@
 
 }
 .inputt{
-    top: 180px;
+    top: 140px;
     position: absolute;
-    left: 27.5%;
+    
     width: 45%;
     border-radius: 25%;
 }
@@ -37,4 +37,7 @@
 .text-center{
 color: rgba(181, 181, 181, 1);
 margin-top: 10px;
+}
+.thebox{
+    background-color: rgb(199, 200, 202);
 }
