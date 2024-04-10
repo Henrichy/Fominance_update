@@ -22,6 +22,7 @@ function Faq (){
     return (
         <>
         <Head /> 
+
         <div className="thebigb "></div>
 
         <div className=" justify-center flex items-center flex-col">
@@ -30,6 +31,7 @@ function Faq (){
         <h1 className=' absolute top-[20px] flex text-gray-700 font-bold text-5xl'>How might we <h2 className="text-orange-300">&nbsp; help you?</h2></h1>
         <div className='inputt'>
         <div className="therelative relative flex items-center bg-white flex rounded-lg items-center justify-around px-4 py-2 gap-2">
+
             <img className="h-4 w-auto absolute left-4 top-2.2" src={icon} alt="Logo" />
             <input type="text" className="focus:outline-none ml-6 w-full"
               placeholder="Enter your question here"
