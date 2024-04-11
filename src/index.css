@@ -1,11 +1,13 @@
+/* In your CSS or SCSS file */
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-/* In your CSS or SCSS file */
+/* Define base styles */
 @layer base {
-    .font-notosans {
-      font-family: 'montserrat', sans-serif;
-    }
+  body {
+    font-family: 'Familjen Grotesk', sans-serif;
   }
+}
+
   

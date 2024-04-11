@@ -10,6 +10,8 @@ import BestDeals from "./components/BestDeals";
 import BlogPost from "./components/Blogpost";
 import Affiliate from "./components/affiliate";
 import Cont from "./components/Cont";
+import SignUp from "./components/signup";
+import SignIn from "./components/signin";
 
 
 
@@ -29,6 +31,9 @@ function App() {
           <Route path="/community/blog" element={<BlogPost />} />
           <Route path="/community/affiliate" element={<Affiliate />} />
           <Route path="/support/contact" element={<Cont />} />
+          <Route path="/signup" element={<SignUp />} />
+          <Route path="/signin" element={<SignIn />} />
+
 
 
         </Routes>

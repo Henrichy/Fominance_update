@@ -22,7 +22,7 @@ function Colorednav() {
     <NavLink to="/Giftcards" activeClassName="active" className="nav text-white flex justify-center items-center h-full">
       Giftcards
     </NavLink>
-    <div className="relative flex justify-center">
+    <div className="py-[20px] relative flex justify-center">
   <NavLink
     to="/community/blog"
     activeClassName="active"
@@ -30,13 +30,13 @@ function Colorednav() {
   >
     Community
   </NavLink>
-  <div className="absolute bg-white px-5 py-1 rounded-md hideing flex justify-between gap-6 bottom-[-35px] text-sm">
+  <div className="absolute bg-white px-8 py-2 rounded-md z-10 hideing flex justify-between gap-6 bottom-[-35px] text-lg">
+    <a href="/community/blog">Blog&nbsp;Post</a>
     <a href="/community/affiliate">Affiliate</a>
-    <a href="/community/blog">Blog</a>
   </div>
 </div>
 
-<div className="relative flex justify-center">
+<div className="py-[20px] relative flex justify-center">
   <NavLink
     to="/support/contact"
     activeClassName="active"
@@ -44,9 +44,9 @@ function Colorednav() {
   >
     Support
   </NavLink>
-  <div className="absolute bg-white px-5 py-1 rounded-md hiing flex justify-between gap-6 bottom-[-35px] text-sm">
-    <a href="/support/contact">Contact</a>
-    <a href="/support/faq">Faq</a>
+  <div className="absolute bg-white px-8 py-2 rounded-md z-10 hiing flex justify-between gap-6 bottom-[-35px] text-lg">
+    <a href="/support/faq">FAQ</a>
+    <a   href="/support/contact">Contact&nbsp;Us</a>
   </div>
 </div>
 
