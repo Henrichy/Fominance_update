@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 .signup{
 background-color: rgba(250, 246, 242, 1);
 }
@@ -5,3 +6,12 @@ background-color: rgba(250, 246, 242, 1);
     opacity: 70%;
     transition: all 0.3s;
 }
+=======
+.signup{
+background-color: rgba(250, 246, 242, 1);
+}
+.signbutton:hover{
+    opacity: 70%;
+    transition: all 0.3s;
+}
+>>>>>>> 1f4d837a2ae9459402becce8ba0623d7ce442c59
