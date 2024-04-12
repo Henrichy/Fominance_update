@@ -2,6 +2,8 @@ import React, { useState } from 'react';
 import Left from "./../assets/leftbutton.svg"
 import Right from "./../assets/rightbutton.svg"
 
+
+
 function TestimonialCard({ testimonial }) {
   if (!testimonial) {
     // Render nothing if there is no testimonial
