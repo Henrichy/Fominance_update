@@ -17,7 +17,7 @@ const SignUp = () => {
     // Username validation: letters and numbers
     const usernameRegex = /^(?=.*[a-zA-Z])(?=.*[0-9])[a-zA-Z0-9]+$/;
     if (!usernameRegex.test(username)) {
-      setErrorMessage('Username must contain at least one letter and one number.');
+      setErrorMessage('<img src="' + errorImage + '" alt="Error" />&nbsp; Username must contain at least one letter and one number.');
       return;
     }
 
