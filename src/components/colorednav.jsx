@@ -14,7 +14,7 @@ function Colorednav() {
             <img src={Logo} alt="" />
           </Link>
          <div>
-          <input type="" placeholder="Search here" className=" w-[376px] px-[20px] py-[8px] border-solid border-white bg-colorednavbg colored border-[1px] rounded-md placeholder-white font-light "/>
+          <input type="" placeholder="Search here" className=" w-[376px] px-[20px] py-[8px] border-solid border-white bg-colorednavbg colored border-[1px] rounded-md placeholder-white font-light focus:outline-none "/>
          </div>
     <NavLink to="/about" activeClassName="active" className="nav text-white flex justify-center items-center h-full">
       About Us
@@ -50,9 +50,16 @@ function Colorednav() {
   </div>
 </div>
 
-    <Link to="/Account" activeClassName="active" className=" text-white flex justify-center items-center h-full bg-heroBlue px-[40px] py-[13px]  rounded-full font-semibold hover:bg-white hover:text-btnBlue transition ease-linear duration-[0.3s]">
+    <div className="py-[20px] relative flex justify-center">
+
+    <NavLink to="/Account" activeClassName="active" className=" text-white flex justify-center items-center h-full bg-btnBlue px-[40px] py-[13px]  rounded-full font-semibold hover:bg-white hover:text-btnBlue transition ease-linear duration-[0.2s]">
       My Account
-      </Link>
+      </NavLink>
+      <div className="absolute bg-white px-8 py-2 rounded-md z-10 hidding flex justify-between gap-6 bottom-[-35px] text-lg">
+    <a href="/signup">Sign&nbsp;Up</a>
+    <a   href="/signin">Log&nbsp;In</a>
+  </div>
+</div>
     
   </div>
   </>
