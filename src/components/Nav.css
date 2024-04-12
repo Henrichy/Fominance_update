@@ -8,9 +8,6 @@
 .not-active{
     text-decoration: none;
 }
-.abig{
-
-}
 .relative .hideing {
   display: none;
 }
@@ -25,5 +22,12 @@
   }
   
   .relative:hover .hiing {
+    display: flex; /* Show the absolute class on hover */
+  }
+  .relative .hidding {
+    display: none;
+  }
+  
+  .relative:hover .hidding {
     display: flex; /* Show the absolute class on hover */
   }
