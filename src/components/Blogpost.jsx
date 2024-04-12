@@ -18,6 +18,7 @@ function BlogPost() {
   return (
     <div className='blogg'>
     <Head />
+    <div>
     <div className='flex items-center justify-center relative herro'>
     <img className='w-[100%]' src={Phoneimg} alt="" />
     <img className='article' src={article} alt="" />
@@ -30,6 +31,7 @@ function BlogPost() {
             <button className="bg-blue-600 h-8 pl-3 pr-3 text-white rounded-lg">Search</button>
           </div>
           </div>
+    </div>
     </div>
     <div className='flex justify-center items-center containn'>
         <div className="w-[40%] relative  bg-white flex rounded-lg items-center justify-around px-4 py-2 gap-2 mb-10">

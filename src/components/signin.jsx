@@ -8,7 +8,7 @@ const SignIn = () => {
   return (
     <div className='signup flex'>
         <div className='relative w-[40%]'>
-        <img className='absolute top-10' src={formsign} alt="" />
+        <a href="/"> <img className='absolute top-10' src={formsign} alt="" /></a>
         <img className='w-[88%] h-screen' src={rectan} alt="" />
         <img className='absolute left-[90px] bottom-10' src={GIFT1} alt="" />
         </div>
