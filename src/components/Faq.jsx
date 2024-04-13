@@ -23,7 +23,7 @@ function Faq (){
         <>
         <Head /> 
 
-        <div className="thebigb "></div>
+        {/* <div className="thebigb "></div> */}
 
         <div className=" justify-center flex items-center flex-col">
             <div className="relative flex justify-center items-center">
