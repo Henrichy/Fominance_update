@@ -23,6 +23,7 @@ function Faq (){
     return (
         <>
         <Head /> 
+
         <div className=" justify-center w-full flex items-center flex-col">
             <div className="relative flex justify-center items-center">
         <img className='w-full' src={sallyA} alt="" />
