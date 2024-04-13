@@ -24,11 +24,9 @@ function Faq (){
         <>
         <Head /> 
 
-        {/* <div className="thebigb "></div> */}
-
-        <div className=" justify-center flex items-center flex-col">
+        <div className=" justify-center w-full flex items-center flex-col">
             <div className="relative flex justify-center items-center">
-        <img className='w-[100%]' src={sallyA} alt="" />
+        <img className='w-full' src={sallyA} alt="" />
         <h1 className=' absolute top-[20px] flex text-gray-700 font-bold text-5xl'>How might we <h2 className="text-orange-300">&nbsp; help you?</h2></h1>
         <div className='inputt'>
         <div className="therelative relative flex items-center bg-white flex rounded-lg items-center justify-around px-4 py-2 gap-2">

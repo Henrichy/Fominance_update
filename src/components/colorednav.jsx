@@ -6,6 +6,11 @@ import { Link } from "react-router-dom";
 
 
 function Colorednav() {
+  const handleClick = (e) => {
+    e.preventDefault(); // Prevent default action
+    // Optionally, you can push a new URL to history if needed
+    // history.push('/support/contact');
+  };
   return (
     <>
     
@@ -24,11 +29,12 @@ function Colorednav() {
     </NavLink>
     <div className="py-[20px] relative flex justify-center">
   <NavLink
-    to="/community/blog"
+    onClick={handleClick}
+    to="/community"
     activeClassName="active"
     className="nav text-white flex justify-center items-center h-full relative" // Add relative class here
   >
-    Community
+     Community
   </NavLink>
   <div className="absolute bg-white px-8 py-2 rounded-md z-10 hideing flex justify-between gap-6 bottom-[-35px] text-lg">
     <a href="/community/blog">Blog&nbsp;Post</a>
@@ -38,7 +44,8 @@ function Colorednav() {
 
 <div className="py-[20px] relative flex justify-center">
   <NavLink
-    to="/support/contact"
+    onClick={handleClick}
+    to="/support"
     activeClassName="active"
     className="nav text-white flex justify-center items-center h-full relative" // Add relative class here
   >
@@ -50,16 +57,10 @@ function Colorednav() {
   </div>
 </div>
 
-    <div className="py-[20px] relative flex justify-center">
-
-    <NavLink to="/Account" activeClassName="active" className=" text-white flex justify-center items-center h-full bg-btnBlue px-[40px] py-[13px]  rounded-full font-semibold hover:bg-white hover:text-btnBlue transition ease-linear duration-[0.2s]">
+    <NavLink to="/signin" activeClassName="active" className=" text-white flex justify-center items-center h-full bg-btnBlue px-[40px] py-[13px]  rounded-full font-semibold hover:bg-white hover:text-btnBlue transition ease-linear duration-[0.2s]">
       My Account
       </NavLink>
-      <div className="absolute bg-white px-8 py-2 rounded-md z-10 hidding flex justify-between gap-6 bottom-[-35px] text-lg">
-    <a href="/signup">Sign&nbsp;Up</a>
-    <a   href="/signin">Log&nbsp;In</a>
-  </div>
-</div>
+ 
     
   </div>
   </>
