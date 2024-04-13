@@ -13,6 +13,7 @@ import './affiliate.css'
 import './blog.css'
 import './Faq.css'
 import Supportcomp from "./Supportcomp";
+import FaqSection from "./FaqSection";
 
 
 
@@ -51,12 +52,7 @@ function Faq (){
             </div>
             <h3 className="font-bold asked">Frequently Asked Questions.</h3>
             <div className=" w-[100%] flex flex-col justify-center items-center gap-4  my-8">
-            <div className="expand px-10 text-left flex items-center justify-between"><span className="font-semibold"> How can I purchase a gift card?</span><span className="text-blue-600">+</span></div>
-            <div className="expand px-10 text-left flex items-center justify-between"><span className="font-semibold"> Can i customize my giftcard with personal message?</span><span className="text-blue-600">+</span></div>
-            <div className="expand px-10 text-left flex items-center justify-between"><span className="font-semibold">  Can I send a gift card to someone else?</span><span className="text-blue-600">+</span></div>
-            <div className="expand px-10 text-left flex items-center justify-between"><span className="font-semibold">  What brands are available for gift cards?</span><span className="text-blue-600">+</span></div>
-            <div className="expand px-10 text-left flex items-center justify-between"><span className="font-semibold"> How secure is my personal information when using this app?</span><span className="text-blue-600">+</span></div>
-            <div className="expand px-10 text-left flex items-center justify-between"><span className="font-semibold"> Can i store my unused giftcard on fominance?</span><span className="text-blue-600">+</span></div>
+            <FaqSection />
 
             </div>
         </div>

@@ -14,7 +14,11 @@ function Head() {
             <img src={Logo} alt="" />
           </Link>
          <div>
-          <input type="" placeholder="Search here" className=" w-[376px] px-[20px] py-[8px] border-solid border-white bg-heroBlue border-[1px] rounded-md placeholder-white font-light caret-white text-white"/>
+         <input
+  type="text"
+  placeholder="Search here"
+  className="w-[376px] px-[20px] py-[8px] border-solid border-white bg-heroBlue border-[1px] rounded-md placeholder-white font-light caret-white text-white focus:outline-none"
+/>
          </div>
     <NavLink to="/about" activeClassName="active" className="nav text-white flex justify-center items-center h-full">
       About Us
@@ -57,7 +61,7 @@ function Head() {
       </NavLink>
       <div className="absolute bg-white px-8 py-2 rounded-md z-10 hidding flex justify-between gap-6 bottom-[-35px] text-lg">
     <a href="/signup">Sign&nbsp;Up</a>
-    <a   href="/login">Log&nbsp;In</a>
+    <a   href="/signin">Log&nbsp;In</a>
   </div>
 </div>
   </div>
