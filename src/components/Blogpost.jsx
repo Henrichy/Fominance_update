@@ -102,7 +102,7 @@ function BlogPost() {
 </div>
 
           </div>
-          <div className='house px-10 pb-14'>
+          <div className='house px-10 pb-14 h-[600px]'>
             <h1 className='text-3xl font-semibold feature mb-6'>Featured Update</h1>
             <div className='flex justify-between items-center gap-10'>
               <div  className='w-[40%]'><img src={giftcardd} alt="" /></div>
@@ -114,7 +114,7 @@ function BlogPost() {
               </div>
             </div>
           </div>
-          <div className='house px-10 pb-14'>
+          <div className='house px-10 pb-14 h-[600px]'>
             <div className='flex justify-between items-center gap-10'>
               <div  className='w-[40%]'><img src={cardboard} alt="" /></div>
               <div className='w-[40%] mr-20'><h2 className='orange text-xl font-semibold mb-6'>Gift Card Etiquette: Dos and Don'ts for Givers and Receivers.</h2>
