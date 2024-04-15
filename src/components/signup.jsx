@@ -3,6 +3,7 @@ import rectan from '../assets/rectan.png';
 import formsign from '../assets/formsign.png';
 import MenAni from '../assets/MenAni.svg';
 import errorImage from '../assets/errorImage.png';
+import {Link} from 'react-router-dom'
 import './signup.css';
 
 const SignUp = () => {
@@ -10,6 +11,12 @@ const SignUp = () => {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
   const [errorMessage, setErrorMessage] = useState('');
+  const [emailError, setEmailError] = useState(false);
+
+
+  const validateEmail = (email) => {
+    return email.includes('@') && email.endsWith('.com');
+  };
 
   const handleSignUp = (e) => {
     e.preventDefault();
@@ -27,9 +34,17 @@ const SignUp = () => {
       setErrorMessage('<img src="' + errorImage + '" alt="Error" />&nbsp; Password not strong. It should contain Alphanumeric character.')
     }
 
+    if (!validateEmail(email)) {
+        setEmailError(true);
+      } else {
+        setEmailError(false);
+        
+      }
+
     // If validation passes, you can proceed with signing up the user
     // Add your sign-up logic here
   };
+
 
   return (
     <div className='signup flex'>
@@ -46,21 +61,29 @@ const SignUp = () => {
           <form className='w-[100%]  flex flex-col gap-6 mt-5' onSubmit={handleSignUp} action='/signin.jsx' method='post'>
             <div className='w-[100%] flex start flex-col'>    
               <label className='mb-3' htmlFor="username">Username</label>
-              <div className='h-[45px] toround rounded-md w-[100%] bg-none flex items-center px-5'>
+              <div className='h-[45px] border-[1px] toround rounded-md w-[100%] bg-none flex items-center px-5'>
                 <input className="focus:outline-none bg-transparent w-[100%]" type="text" id="username" required value={username} onChange={(e) => setUsername(e.target.value)} />
               </div>
             </div>
             <div className='w-[100%] flex start flex-col'>    
               <label className='mb-3' htmlFor="emailaddress">Email Address</label>
-              <div className='h-[45px] toround rounded-md w-[100%] bg-none flex items-center px-5'>
+              <div className='h-[45px] toround border-[1px] rounded-md w-[100%] bg-none flex items-center px-5'>
                 <input className="focus:outline-none bg-transparent w-[100%]" type="text" id="emailaddress" required value={email} onChange={(e) => setEmail(e.target.value)} />
               </div>
             </div>
+            {emailError && (
+              <p className="text-red-500 text-l  mt-2">⚠️  Incorrect email format</p>
+            )}
             <div className='w-[100%] flex start flex-col'>    
               <label className='mb-3' htmlFor="password">Password</label>
-              <div className='h-[45px] toround rounded-md w-[100%] bg-none flex items-center px-5'>
+              <div className='h-[45px] toround border-[1px] rounded-md w-[100%] bg-none flex items-center px-5'>
                 <input className="focus:outline-none bg-transparent w-[100%]" type="password" id="password" required value={password} onChange={(e) => setPassword(e.target.value)} />
               </div>
+            </div>
+            <div className='text-right'>
+              <Link to="/forgot-password">
+                <span className='text-heroBlue'>Forgot password?</span>
+              </Link>
             </div>
             {errorMessage && <div className="text-red-600 flex" dangerouslySetInnerHTML={{ __html: errorMessage }}></div>} {/* Display error message */}
 
