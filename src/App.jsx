@@ -9,7 +9,7 @@ import Faq from "./components/Faq"
 import BestDeals from "./components/BestDeals";
 import BlogPost from "./components/Blogpost";
 import Affiliate from "./components/affiliate";
-import Cont from "./components/Cont";
+import Cont from "./components/Contact";
 import SignUp from "./components/signup";
 import SignIn from "./components/signin";
 

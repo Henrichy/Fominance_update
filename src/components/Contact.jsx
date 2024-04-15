@@ -16,7 +16,9 @@ function Cont() {
         <img className='w-[800px]' src={salyG} alt="" />
         </div>
         </div>
-        <div className='thebigcontt flex-col'>
+        
+        <div className='thebigcontt flex-col '>
+       
             <div className='flex flex-col justify-center text-center'>
             <h3 className='headin text-3xl'>Have more questions?</h3>
             <h4 className='subhead font-semibold'>No Worries, we got you</h4>
@@ -40,8 +42,9 @@ function Cont() {
         <div className='h-[125px] toround rounded-md w-[100%] bg-none  flex px-5'><input className="focus:outline-none bg-transparent w-[100%] h-[40%]" type="text" id="message" placeholder="Enter your message" /></div>
         </div>
         <button className='rounded-[30px] bg-blue-500 text-white px-6 py-3 my-8'>Submit</button>
-
         </div>
+        
+        
       <Footer />
     </>
   )

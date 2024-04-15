@@ -1,39 +1,79 @@
-import React from 'react'
-import rectan from '../assets/rectan.png'
-import formsign from '../assets/formsign.png'
-import GIFT1 from '../assets/GIFT1.png'
-import './signup.css'
+import React, { useState } from 'react';
+import Login from './../assets/Login2.svg';
+import { Link } from 'react-router-dom';
 
-const SignIn = () => {
+const Signin = () => {
+  const [email, setEmail] = useState('');
+  const [password, setPassword] = useState('');
+  const [emailError, setEmailError] = useState(false);
+
+  // Reset error when user starts typing again
+  const handleEmailChange = (e) => {
+    setEmail(e.target.value);
+    if (emailError) setEmailError(false); 
+  };
+
+  const handlePasswordChange = (e) => {
+    setPassword(e.target.value);
+  };
+
+  const validateEmail = (email) => {
+    return email.includes('@') && email.endsWith('.com');
+  };
+
+  const handleSubmit = (e) => {
+    e.preventDefault(); 
+    if (!validateEmail(email)) {
+      setEmailError(true);
+    } else {
+      setEmailError(false);
+      
+    }
+  };
+
   return (
-    <div className='signup flex'>
-        <div className='relative w-[40%]'>
-        <a href="/"> <img className='absolute top-10' src={formsign} alt="" /></a>
-        <img className='w-[88%] h-screen' src={rectan} alt="" />
-        <img className='absolute left-[90px] bottom-10' src={GIFT1} alt="" />
+    <div className='bg-loginbg'>
+      <div className='flex'>
+        <div>
+          <img src={Login} alt="" className='h-[100vh]' />
         </div>
-
-        <div className='py-6 pl-20 pr-16 w-[54%]'>
-            <div className='bg-white  flex justify-center p-10 flex-col items-center gap-2 rounded-lg w-full h-full'>
-                <div><h2 className='text-2xl font-semibold'>Welcome back!</h2></div>
-                <div><h2 className='font-semibold'>Lets log you in to your <span className='text-blue-600'>Fominance</span> experience.</h2></div>
-                <form className='w-[100%]  flex flex-col gap-6 mt-10' action="">
-                <div className='w-[100%] flex start flex-col'>    
-        <label className='mb-3' for="username">Username</label>
-        <div className='h-[45px] toround rounded-md w-[100%] bg-none flex items-center px-5'><input className="focus:outline-none bg-transparent w-[100%]" type="text" id="username"/></div>
-        </div>
-        <div className='w-[100%] flex start flex-col'>    
-        <label className='mb-3' for="password">Password</label>
-        <div className='h-[45px] toround rounded-md w-[100%] bg-none flex items-center px-5'><input className="focus:outline-none bg-transparent w-[100%]" type="password" id="password"/></div>
-        </div>
-        <div className='flex flex-col justify-center items-center mt-14'><button className='signbutton bg-blue-600 px-6 py-2 rounded-md font-semibold text-white w-[60%]'>Sign Up</button>
-        <h3 className='text-sm'>Dont have an account? <a className='text-blue-600' href="/signup">Sign Up Here</a> </h3>
-        </div>
-                </form>
+        <div className='w-[660px] h-[740px] bg-white rounded-2xl my-auto mx-auto text-center pt-[130px]'>
+          <h1 className='font-[500] text-[32px] leading-[40px]'>Welcome back!</h1>
+          <h3 className='font-[400] text-[20px] leading-[27.2px] pt-[20px]'>Lets log you in to your <span className='text-heroBlue'>Fominance</span> experience</h3>
+          <form className='pt-[50px] w-[548px] mx-auto text-left' onSubmit={handleSubmit}>
+            <h4>Username</h4>
+            <input 
+              type="text"
+              value={email}
+              onChange={handleEmailChange}
+              className={`w-[548px] h-[54px] border-solid border-[1px] mt-[10px] rounded-lg p-5 ${emailError ? 'border-red-500' : ''}`}
+              
+            />
+            {emailError && (
+              <p className="text-red-500 text-l  mt-2">⚠️  Incorrect email format</p>
+            )}
+            <h4 className='mt-[30px]'>Password</h4>
+            <input 
+              type="password" 
+              value={password}
+              onChange={handlePasswordChange}
+              className='w-[548px] h-[54px] mt-[10px] border-solid border-[1px] rounded-lg p-5'
+              
+            />
+            <div className='text-right'>
+              <Link to="/forgot-password">
+                <span className='text-heroBlue'>Forgot password?</span>
+              </Link>
             </div>
+            <button type="submit" className='bg-heroBlue  text-white w-[380px] h-[48px] rounded-xl mt-[50px] mx-auto block'>Log In</button>
+          </form>
+          <div className='mt-[20px]'>
+            <h4>Do not have an account? <Link to="/signup" className='text-heroBlue'>Signup Here</Link></h4>
+          </div>
         </div>
+      </div>
     </div>
-  )
+  );
 }
 
-export default SignIn;
+export default Signin;

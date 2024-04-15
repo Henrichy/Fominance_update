@@ -45,17 +45,17 @@ function Affiliate() {
                 <div className='flex flex-col justify-center items-center w-[30%] h-[100%] bg-white rounded-2xl px-10 pb-4 shadow-lg'>
                     <img src={salyB} alt="" />
                     <h2 className='font-semibold text-xl'>Register.</h2>
-                    <h3 className='text-center'>Register with us as an affiliate partner to start your reward journey.</h3>
+                    <h3 className='text-center textcenter'>Register with us as an affiliate partner to start your reward journey.</h3>
                     </div>
                     <div className='flex flex-col justify-center items-center w-[30%] h-[100%] bg-white rounded-2xl px-10 pb-4 shadow-lg'>
                     <img src={salyC} alt="" />
                     <h2 className='font-semibold text-xl'>Start Your Affiliate Journey.</h2>
-                    <h3 className='text-center'>Start your affiliate journey with us by getting your affiliate link, and  inviting people through it.</h3>
+                    <h3 className='text-center textcenter'>Start your affiliate journey with us by getting your affiliate link, and  inviting people through it.</h3>
                     </div>                
                     <div className='flex flex-col justify-center items-center w-[30%] h-[100%] bg-white rounded-2xl px-10 pb-4 shadow-lg'>
                     <img src={salyD} alt="" />
                     <h2 className='font-semibold text-xl'>Get Massive Reward.</h2>
-                    <h3 className='text-center'>Enjoy massive benefit as an affiliate.</h3>
+                    <h3 className='text-center textcenter'>Enjoy massive benefit as an affiliate.</h3>
                     </div>
             </div>
             <button className='rounded-[30px] bg-blue-500 text-white px-6 py-3 my-8 mt-[80px] w-[162px] h-[50px] font-[600] text-[20px]'>Register</button>

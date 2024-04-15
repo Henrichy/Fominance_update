@@ -28,7 +28,8 @@ export default {
         'carouselB' : '#D7E5FE',
         'buttoncolor' :'#353131',
         'abtHeroH' : '#050038',
-        'abtHeroP': '#3E4044',    
+        'abtHeroP': '#3E4044', 
+        'loginbg':'#FAF6F2'   
           },
     },
   },
