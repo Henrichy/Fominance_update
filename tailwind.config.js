@@ -29,7 +29,8 @@ export default {
         'buttoncolor' :'#353131',
         'abtHeroH' : '#050038',
         'abtHeroP': '#3E4044', 
-        'loginbg':'#FAF6F2'   
+        'loginbg':'#FAF6F2',
+        'Outlinebg':'#08C1F9'
           },
     },
   },
