@@ -35,16 +35,14 @@ const Signin = () => {
     <div className='bg-loginbg'>
       <div className='flex'>
         <div>
+          <Link to='/'>
           <img src={Login} alt="" className='h-[100vh]' />
+          </Link>
+          
         </div>
         <div className='w-[660px] h-[740px] bg-white rounded-2xl my-auto mx-auto text-center pt-[130px]'>
           <h1 className='font-[500] text-[32px] leading-[40px]'>Welcome back!</h1>
           <h3 className='font-[400] text-[20px] leading-[27.2px] pt-[20px]'>Lets log you in to your &nbsp;
-          <Link to="/">
-          <span className='text-heroBlue'>Fominance</span> 
-          </Link>&nbsp;
-          
-          experience</h3>
           <form className='pt-[50px] w-[548px] mx-auto text-left' onSubmit={handleSubmit}>
             <h4>Username</h4>
             <input 
@@ -70,7 +68,7 @@ const Signin = () => {
                 <span className='text-heroBlue'>Forgot password?</span>
               </Link>
             </div>
-            <button type="submit" className='bg-heroBlue  text-white w-[380px] h-[48px] rounded-xl mt-[50px] mx-auto block'>Log In</button>
+            <button type="submit" className='hover:opacity-[85%] transition-all duration-[0.3s] ease-linear bg-heroBlue  text-white w-[380px] h-[48px] rounded-xl mt-[50px] mx-auto block'>Log In</button>
           </form>
           <div className='mt-[20px]'>
             <h4>Do not have an account? <Link to="/signup" className='text-heroBlue'>Signup Here</Link></h4>
