@@ -4,7 +4,7 @@ import formsign from '../assets/formsign.png';
 import MenAni from '../assets/MenAni.svg';
 import errorImage from '../assets/errorImage.png';
 import { Link } from 'react-router-dom'
-import './signup.css';
+
 
 const SignUp = () => {
   const [username, setUsername] = useState('');
