@@ -42,7 +42,7 @@ const Signin = () => {
         </div>
         <div className='w-[660px] h-[740px] bg-white rounded-2xl my-auto mx-auto text-center pt-[130px]'>
           <h1 className='font-[500] text-[32px] leading-[40px]'>Welcome back!</h1>
-          <h3 className='font-[400] text-[20px] leading-[27.2px] pt-[20px]'>Lets log you in to your &nbsp;
+          <h3 className='font-[400] text-[20px] leading-[27.2px] pt-[20px]'>Lets log you in to your</h3> &nbsp;
           <form className='pt-[50px] w-[548px] mx-auto text-left' onSubmit={handleSubmit}>
             <h4>Username</h4>
             <input 
