@@ -41,7 +41,7 @@ function Cont() {
             </div>
             <div className='w-[100%] flex start flex-col'>    
               <label className='font-semibold' for="message">Message</label>
-              <input className="focus:outline-textfield bg-transparent w-[100%] h-[66px] border-solid border-[2px]  mt-[10px] rounded-xl p-3" type="text" id="message" placeholder="Enter your message" />
+              <input className="focus:outline-textfield bg-transparent w-[100%] h-[66px] border-solid border-[2px] rounded-xl p-3" type="text" id="message" placeholder="Enter your message" />
             </div>
             <button className='rounded-[30px] bg-blue-500 text-white px-6 py-3 my-8 w-[162px] h-[50px] hover:text-opacity-95 transition ease-linear '>Submit</button>
         </div>
