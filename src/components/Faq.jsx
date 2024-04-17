@@ -33,9 +33,7 @@ function Faq (){
         setIsAccClicked(false);
         setIsOrderClicked(false);
         setIsSecClicked(false);
-
     };
-    
     const handleAccClick = () => {
         setSelectedCategory('acc');
         setIsAccClicked(true);
@@ -49,7 +47,6 @@ function Faq (){
         setIsGiftcardClicked(false);
         setIsOrderClicked(true);
         setIsSecClicked(false);
-
     };
     const handleSecClick = () => {
         setSelectedCategory('Sec');
@@ -57,7 +54,6 @@ function Faq (){
         setIsGiftcardClicked(false);
         setIsOrderClicked(false);
         setIsSecClicked(true);
-
     };
 
     return (
@@ -66,10 +62,13 @@ function Faq (){
 
         <div className="justify-center w-full flex items-center flex-col">
             <div className="relative flex justify-center items-center">
+                <div>
+
+                </div>
                 <img className='w-full' src={sallyA} alt="" />
                 <h1 className='absolute top-[20px] flex text-gray-700 font-bold text-5xl'>How might we <h2 className="text-orange-300">&nbsp; help you?</h2></h1>
                 <div className='inputt'>
-                    <div className="therelative relative flex items-center bg-white flex rounded-lg items-center justify-around px-4 py-2 gap-2">
+                    <div className="therelative relative   bg-white flex rounded-lg items-center justify-around px-4 py-2 gap-2">
                         <img className="h-4 w-auto absolute left-4 top-2.2" src={icon} alt="Logo" />
                         <input type="text" className="focus:outline-none ml-6 w-full" placeholder="Enter your question here" />
                         <button className="bg-blue-600 h-8 pl-3 pr-3 text-white rounded-lg">Search</button>
@@ -98,7 +97,7 @@ function Faq (){
                 </div>
             </div>
             <h3 className="font-bold asked">Frequently Asked Questions.</h3>
-            <div className="w-[100%] h-[550px] flex flex-col justify-center items-center gap-4  my-8">
+            <div className="w-[100%]  flex flex-col justify-center items-center gap-4  my-8 ">
 
                 {!selectedCategory && <FaqSection />}
                 {selectedCategory === 'giftcard' && <FadeInSection><FaqSectionGiftcard /></FadeInSection>}
