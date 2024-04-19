@@ -42,7 +42,7 @@ function About() {
      <AboutHero/>
      <Sections/>
      <TestimonialCarousel testimonials={testimonials} />
-     <div>
+     <div id='faq'>
       <div className='pl-[100px]'>
         <h1 className='font-[600] text-[48px] leading-[62px] mt-[80px]'>
         Frequently asked questions.
@@ -51,7 +51,7 @@ function About() {
         We have answers to most of your Questions
         </h4>
       </div>
-     <div className='flex justify-between px-[100px] pt-[40px]'>
+     <div className='flex justify-between px-[100px] pt-[40px]' >
       <FaqSection />
       <img src={Sittingman} alt="" />
     </div>

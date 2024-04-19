@@ -7,6 +7,7 @@
 }
 .not-active{
     text-decoration: none;
+    border: none;
 }
 .relative .hideing {
   display: none;
@@ -29,5 +30,6 @@
   }
   
   .relative:hover .hidding {
-    display: flex; /* Show the absolute class on hover */
+    display: flex;
+    opacity: 90%; /* Show the absolute class on hover */
   }
