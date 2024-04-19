@@ -64,8 +64,8 @@ function Faq (){
             <div className="relative flex justify-center items-center">
                 <div>
 
-                </div>
-                <img className='w-full' src={sallyA} alt="" />
+         </div>
+                <img className='w-[100vw]' src={sallyA} alt="" />
                 <h1 className='absolute top-[20px] flex text-gray-700 font-bold text-5xl'>How might we <h2 className="text-orange-300">&nbsp; help you?</h2></h1>
                 <div className='inputt'>
                     <div className="therelative relative   bg-white flex rounded-lg items-center justify-around px-4 py-2 gap-2">
