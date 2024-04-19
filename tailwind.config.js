@@ -31,7 +31,8 @@ export default {
         'abtHeroP': '#3E4044', 
         'loginbg':'#FAF6F2',
         'textfield':'#233694',  
-        'Outlinebg':'#08C1F9'
+        'Outlinebg':'#08C1F9',
+        'typewriter':'#F16607',
           },
     },
   },

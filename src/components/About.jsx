@@ -10,6 +10,7 @@ import Abbie from "./../assets/abbie.svg"
 import FaqSection from './FaqSection';
 import Sittingman from './../assets/sittingman.svg'
 
+
 const testimonials = [
   { name: 'Jace',
     text: 'Absolutely love this gift card web app! Super easy to use, and the variety of gift card options is fantastic',

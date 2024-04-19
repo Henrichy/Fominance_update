@@ -1,5 +1,6 @@
 import React from 'react';
 import Saly1 from "./../assets/minijet.svg";
+import {Typewriter} from "react-simple-typewriter"
 import Saly2 from "./../assets/jetmini1.svg";
 import Globe from "./../assets/globe.svg";
 
@@ -18,6 +19,15 @@ const AboutHero = () => {
         <h4 className='font-medium text-abtHeroH text-2xl leading-tight py-6'>
           100% internet
         </h4>
+        <span className='text-typewriter font-[600] text-[29px] leading-[39.5px]'>
+              <Typewriter 
+                  words={['Giftcards', 'Convenient Gifting', 'Easy Payments']}
+                  loop
+                  cursor
+                  cursorStyle='|'
+                  typeSpeed={100}
+                /> 
+            </span>
 
         <div className='flex justify-between flex-wrap'>
           <img className="w-full md:w-auto max-w-xs md:max-w-none" src={Saly1} alt="" />
