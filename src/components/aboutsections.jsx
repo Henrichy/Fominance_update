@@ -16,7 +16,7 @@ const aboutsections = () => {
                 Who we are.
                 </h1>
                 <p className='font-[500] text-[20px] leading-[40px] pt-[30px]'>
-                We're more than just a platform for gift cards. We're a team of passionate individuals dedicated to redefining the gifting experience. Our mission is simple: to spread joy and make gifting easy, convenient, and memorable for everyone, everywhere.
+                We're more than just a platform for gift cards; we're a team of passionate individuals dedicated to redefining the gifting experience. Our mission is simple: to spread joy and make gifting easy, convenient, and memorable for everyone, everywhere.
                 </p>
             </div>
             <div className='flex flex-col justify-between'>

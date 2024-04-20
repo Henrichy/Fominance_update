@@ -21,15 +21,15 @@ function Head() {
           </Link>
          <div>
          <input
-  type="text"
-  placeholder="Search here"
-  className="w-[376px] px-[20px] py-[8px] border-solid border-white bg-heroBlue border-[1px] rounded-md placeholder-white font-light caret-white text-white focus:outline-none"
-/>
+          type="text"
+          placeholder="Search here"
+          className="w-[376px] px-[20px] py-[8px] border-solid border-white bg-heroBlue border-[1px] rounded-md placeholder-white font-light caret-white text-white focus:outline-none"
+         />
          </div>
     <NavLink to="/about" activeClassName="active" className="nav text-white flex justify-center items-center h-full">
       About Us
     </NavLink>
-    <NavLink to="/Giftcards" activeClassName="active" className="nav text-white flex justify-center items-center h-full">
+    <NavLink to="/giftcards" activeClassName="active" className="nav text-white flex justify-center items-center h-full">
       Giftcards
     </NavLink>
     <div className="py-[20px] relative flex justify-center">
@@ -37,13 +37,13 @@ function Head() {
     onClick={handleClick}
     to="/community"
     activeClassName="active"
-    className="nav text-white flex justify-center items-center h-full relative" // Add relative class here
+    className="nav text-white flex justify-center items-center h-full relative" 
   >
      Community
   </NavLink>
-  <div className="absolute bg-white px-8 py-2 rounded-md z-10 hideing flex justify-between gap-6 bottom-[-35px] text-lg">
-    <a href="/community/blog">Blog&nbsp;Post</a>
-    <a href="/community/affiliate">Affiliate</a>
+  <div className="absolute bg-white w-[150px] h-[90px] text-center rounded-md z-10 hideing flex flex-col justify-between top-[60px] text-md">
+    <a href="/community/blog" className="hover:bg-gray-200 hover:rounded-t-md w-full py-2 h-full transition ease-linear duration-[0.2s]">Blog&nbsp;Post</a>
+    <a href="/community/affiliate" className="hover:bg-gray-200 hover:rounded-b-md w-full h-full py-2 transition ease-linear duration-[0.2s]">Affiliate</a>
   </div>
 </div>
 
@@ -52,13 +52,13 @@ function Head() {
     onClick={handleClick}
     to="/support"
     activeClassName="active"
-    className="nav text-white flex justify-center items-center h-full relative" // Add relative class here
+    className="nav text-white flex justify-center items-center h-full relative" 
   >
     Support
   </NavLink>
-  <div className="absolute bg-white px-8 py-2 rounded-md z-10 hiing flex justify-between gap-6 bottom-[-35px] text-lg">
-    <a href="/support/faq">FAQ</a>
-    <a   href="/support/contact">Contact&nbsp;Us</a>
+  <div className="absolute text-center bg-white w-[150px] h-[90px] rounded-md z-10 hiing flex flex-col justify-between  top-[50px] text-md">
+    <a href="/support/faq" className="hover:bg-gray-200 hover:rounded-t-md w-full py-2 transition ease-linear duration-[0.2s]">FAQ</a>
+    <a   href="/support/contact" className="hover:bg-gray-200 hover:rounded-b-md w-full py-2 transition ease-linear duration-[0.2s]">Contact&nbsp;Us</a>
   </div>
 </div>
 

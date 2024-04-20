@@ -12,6 +12,7 @@ import Affiliate from "./components/affiliate";
 import Cont from "./components/Contact";
 import SignUp from "./components/signup";
 import SignIn from "./components/signin";
+import Giftcards from "./components/Giftcards";
 
 
 
@@ -33,6 +34,7 @@ function App() {
           <Route path="/support/contact" element={<Cont />} />
           <Route path="/signup" element={<SignUp />} />
           <Route path="/signin" element={<SignIn />} />
+          <Route path="/giftcards" element={<Giftcards />} />
 
 
 
