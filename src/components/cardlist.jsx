@@ -4,6 +4,7 @@ import Card2 from "./../assets/card2.svg"
 import Card3 from "./../assets/card3.svg"
 import Card4 from "./../assets/card4.svg"
 import Card5 from "./../assets/card5.svg"
+import Heart from "./../assets/heart.svg"
 
 // Dummy data array simulating fetched data
 const cardData = [
@@ -230,17 +231,18 @@ const CARDS_PER_PAGE = 25;
 
 const Card = ({ title, image, price, likes }) => {
     return (
-        <div className="max-w-sm rounded-2xl overflow-hidden shadow-lg bg-white h-[530px] w-[18%] mt-[50px] mb-[50px]">
+        <div className="max-w-sm rounded-2xl overflow-hidden shadow-lg bg-white h-[540px] w-[18%] mt-[50px] mb-[50px]">
           <img className="w-full" src={image} alt={title} />
           
-          <div className="px-6 py-4">
-            <div className="font-bold text-xl mb-2">{title}</div>
+          <div className="px-6 pt-4">
+            <div className="font-bold text-xl ">{title}</div>
             <span className='text-orange-500 '>Global</span>
-            <p>from</p>
-            <p className="text-gray-700 text-base">{price}</p>
+            <p className='pt-[10px]'>from</p>
+            <p className="text-gray-700  font-[700] text-[20px] ">{price}</p>
           </div>
-          <div className="px-6 pt-4 pb-2">
-            <span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">{likes} Likes</span>
+          <div className="px-6  pb-2 flex align-middle">
+            <span> <img src={Heart} className='py-[6px]' alt="" /></span>
+            <span className="inline-block rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">{likes} Likes</span>
           </div>
         </div>
       );
@@ -248,7 +250,7 @@ const Card = ({ title, image, price, likes }) => {
 
 const Pagination = ({ totalPages, currentPage, onPageChange }) => {
   return (
-    <div className="flex items-center justify-center space-x-1 mb-[50px]">
+    <div className="flex items-center justify-center space-x-1 ">
       <button
         className={`bg-blue-500 text-white px-3 py-1 rounded ${currentPage === 1 ? 'cursor-not-allowed opacity-50' : ''}`}
         disabled={currentPage === 1}
@@ -259,7 +261,7 @@ const Pagination = ({ totalPages, currentPage, onPageChange }) => {
       {[...Array(totalPages).keys()].map(number => (
         <button
           key={number}
-          className={`bg-blue-500 text-white px-3 py-1 rounded ${currentPage === number + 1 ? 'bg-blue-700' : ''}`}
+          className={` text-white px-3 py-1 rounded ${currentPage === number + 1 ? 'bg-blue-700' : ''}`}
           onClick={() => onPageChange(number + 1)}
         >
           {number + 1}
