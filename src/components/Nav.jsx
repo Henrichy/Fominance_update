@@ -41,7 +41,7 @@ function Head() {
   >
      Community
   </NavLink>
-  <div className="absolute bg-white w-[150px] h-[90px] text-center rounded-md z-10 hideing flex flex-col justify-between top-[60px] text-md">
+  <div className="absolute bg-white w-[150px] h-[90px] text-center rounded-md z-10 hideing flex flex-col gap-0 justify-between top-[60px] text-md">
     <a href="/community/blog" className="hover:bg-gray-200 hover:rounded-t-md w-full py-2 h-full transition ease-linear duration-[0.2s]">Blog&nbsp;Post</a>
     <a href="/community/affiliate" className="hover:bg-gray-200 hover:rounded-b-md w-full h-full py-2 transition ease-linear duration-[0.2s]">Affiliate</a>
   </div>
