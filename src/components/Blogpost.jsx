@@ -104,7 +104,7 @@ function BlogPost() {
             </div>
           </div>
           {/* Featured updates Section */}
-          
+
     <Footer />
     </div>
   )

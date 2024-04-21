@@ -68,10 +68,10 @@ function Faq (){
                 <img className='w-[100vw]' src={sallyA} alt="" />
                 <h1 className='absolute top-[20px] flex text-gray-700 font-bold text-5xl'>How might we <h2 className="text-orange-300">&nbsp; help you?</h2></h1>
                 <div className='inputt'>
-                    <div className="therelative relative   bg-white flex rounded-lg items-center justify-around px-4 py-2 gap-2">
+                    <div className="therelative relative  w-[808px] h-[66px] bg-white flex rounded-full  items-center justify-around px-4 py-2 gap-2">
                         <img className="h-4 w-auto absolute left-4 top-2.2" src={icon} alt="Logo" />
-                        <input type="text" className="focus:outline-none ml-6 w-full" placeholder="Enter your question here" />
-                        <button className="bg-blue-600 h-8 pl-3 pr-3 text-white rounded-lg">Search</button>
+                        <input type="text" className="focus:outline-none ml-6 w-full h-full" placeholder="Enter your question here" />
+                        <button className="bg-blue-600 pl-3 pr-3 w-[162px] h-[50px] text-white rounded-full">Search</button>
                     </div>
                 </div>
             </div>
@@ -79,19 +79,19 @@ function Faq (){
 
         <div className="conta flex justify-center flex-col items-center">
             <div className="flex justify-center z-10 mt-[-90px] items-center gap-14 flex-wrap py-10 w-[70%]">
-                <div className={`flex pointer flex-col justify-center items-center bg-white shadow-lg rounded-md p-12 ${isGiftcardClicked ? 'bg-blue-100' : ''}`} onClick={handleGiftcardClick}>
+                <div className={`flex pointer flex-col justify-center items-center bg-white shadow-lg rounded-md p-12 ${isGiftcardClicked ? 'bg-gray-300' : ''}`} onClick={handleGiftcardClick}>
                     <img className="w-[200px] h-[150px]" src={Saly29} alt="" />
                     <h3 className="font-semibold">Giftcards</h3>
                 </div>
-                <div className={`flex pointer flex-col justify-center items-center bg-white shadow-lg rounded-md p-12 ${isAccClicked ? 'bg-blue-100' : ''}`} onClick={handleAccClick}>
+                <div className={`flex pointer flex-col justify-center items-center bg-white shadow-lg rounded-md p-12 ${isAccClicked ? 'bg-gray-300' : ''}`} onClick={handleAccClick}>
                     <img className="w-[200px] h-[150px]" src={Saly12} alt="" />
                     <h3 className="font-semibold">Accounts and Login</h3>
                 </div>
-                <div className={`flex pointer flex-col justify-center items-center bg-white shadow-lg rounded-md p-12 ${isOrderClicked ? 'bg-blue-100' : ''}`} onClick={handleOrderClick}>
+                <div className={`flex pointer flex-col justify-center items-center bg-white shadow-lg rounded-md p-12 ${isOrderClicked ? 'bg-gray-300' : ''}`} onClick={handleOrderClick}>
                     <img className="w-[200px] h-[150px]" src={Saly45} alt="" />
                     <h3 className="font-semibold">Ordering and Payment</h3>
                 </div>
-                <div className={`flex pointer flex-col justify-center items-center bg-white shadow-lg rounded-md p-12 ${isSecClicked ? 'bg-blue-100' : ''}`} onClick={handleSecClick}>
+                <div className={`flex pointer flex-col justify-center items-center bg-white shadow-lg rounded-md p-12 ${isSecClicked ? 'bg-gray-300' : ''}`} onClick={handleSecClick}>
                     <img className="w-[200px] h-[150px]" src={Saly27} alt="" />
                     <h3 className="font-semibold">2FA and Security</h3>
                 </div>
@@ -119,7 +119,7 @@ const FadeInSection = ({ children }) => {
         setVisible(true);
     }, []);
     return (
-        <div className={isVisible ? 'fade-in' : 'hidden'}>
+        <div className={isVisible ? 'fade-in ' : 'hidden'}>
             {children}
         </div>
     );
