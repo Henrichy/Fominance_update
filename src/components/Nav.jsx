@@ -56,7 +56,7 @@ function Head() {
   >
     Support
   </NavLink>
-  <div className="absolute text-center bg-white w-[150px] h-[90px] rounded-md z-10 hiing flex flex-col justify-between  top-[50px] text-md">
+  <div className="absolute text-center bg-white w-[150px] h-[90px] rounded-md z-10 hiing flex flex-col justify-between  top-[60px] text-md">
     <a href="/support/faq" className="hover:bg-gray-200 hover:rounded-t-md w-full py-2 transition ease-linear duration-[0.2s]">FAQ</a>
     <a   href="/support/contact" className="hover:bg-gray-200 hover:rounded-b-md w-full py-2 transition ease-linear duration-[0.2s]">Contact&nbsp;Us</a>
   </div>

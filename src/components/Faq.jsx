@@ -79,20 +79,20 @@ function Faq (){
 
         <div className="conta flex justify-center flex-col items-center">
             <div className="flex justify-center z-10 mt-[-90px] items-center gap-14 flex-wrap py-10 w-[70%]">
-                <div className={`flex pointer flex-col justify-center items-center shadow-lg rounded-md p-12 ${isGiftcardClicked ? 'bg-gray-300' : 'bg-white'}`} onClick={handleGiftcardClick}>
-                    <img className="w-[200px] h-[150px]" src={Saly29} alt="" />
+                <div className={`flex pointer flex-col justify-center items-center shadow-lg rounded-md p-12 ${isGiftcardClicked ? 'bg-gray-300 shadow-2xl shadow-gray-400 transition ease-in-out' : 'bg-white'}`} onClick={handleGiftcardClick}>
+                    <img className="w-[200px] h-[150px]" src={Saly29} alt="" draggable="false"/>
                     <h3 className="font-semibold">Giftcards</h3>
                 </div>
-                <div className={`flex pointer flex-col justify-center items-center shadow-lg rounded-md p-12 ${isAccClicked ? 'bg-gray-300' : 'bg-white'}`} onClick={handleAccClick}>
-                    <img className="w-[200px] h-[150px]" src={Saly12} alt="" />
+                <div className={`flex pointer flex-col justify-center items-center shadow-lg rounded-md p-12 ${isAccClicked ? 'bg-gray-300 shadow-2xl shadow-gray-400 transition ease-in-out' : 'bg-white'}`} onClick={handleAccClick}>
+                    <img className="w-[200px] h-[150px]" src={Saly12} alt="" draggable="false" />
                     <h3 className="font-semibold">Accounts and Login</h3>
                 </div>
-                <div className={`flex pointer flex-col justify-center items-center  shadow-lg rounded-md p-12 ${isOrderClicked ? 'bg-gray-300' : 'bg-white'}`} onClick={handleOrderClick}>
-                    <img className="w-[200px] h-[150px]" src={Saly45}  alt="" />
+                <div className={`flex pointer flex-col justify-center items-center  shadow-lg rounded-md p-12 ${isOrderClicked ? 'bg-gray-300 shadow-2xl shadow-gray-400 transition ease-in-out' : 'bg-white'}`} onClick={handleOrderClick}>
+                    <img className="w-[200px] h-[150px]" src={Saly45}  alt="" draggable="false" />
                     <h3 className="font-semibold">Ordering and Payment</h3>
                 </div>
-                <div className={`flex pointer flex-col justify-center items-center shadow-lg rounded-md p-12 ${isSecClicked ? 'bg-gray-300' : ''}`} onClick={handleSecClick}>
-                    <img className="w-[200px] h-[150px]" src={Saly27} alt="" />
+                <div className={`flex pointer flex-col justify-center items-center shadow-lg rounded-md p-12 ${isSecClicked ? 'bg-gray-300 shadow-2xl shadow-gray-400 transition ease-in-out' : ''}`} onClick={handleSecClick}>
+                    <img className="w-[200px] h-[150px]" src={Saly27} alt="" draggable="false" />
                     <h3 className="font-semibold">2FA and Security</h3>
                 </div>
             </div>
