@@ -23,10 +23,10 @@ const SignupForm = () => {
   };
 
   return (
-    <div className='flex bg-loginbg'>
+    <div className='flex bg-loginbg '>
       <div>
-        <Link to='/'>
-        <img src={Signup} alt="" />
+        <Link  draggable="false" to='/'>
+        <img src={Signup} alt="" draggable="false" className='h-[100vh] '/>
         </Link>  
       </div>
 
@@ -57,7 +57,7 @@ const SignupForm = () => {
           </div>
           <div className='text-center mt-[50px]'>
             <button
-              className='bg-heroBlue h-[48px] w-[380px] rounded-xl text-white font-[600] text-[20px] mb-[5px]'
+              className='bg-heroBlue h-[48px] w-[380px] rounded-xl text-white font-[600] text-[20px] mb-[20px]'
               onClick={handleSignup}
             >
               Sign Up

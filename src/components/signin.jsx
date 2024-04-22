@@ -35,8 +35,8 @@ const Signin = () => {
     <div className='bg-loginbg'>
       <div className='flex'>
         <div>
-          <Link to='/'>
-          <img src={Login} alt="" className='h-[100vh]' />
+          <Link draggable="false" to='/'>
+          <img src={Login} alt=""draggable="false"  className='h-[100vh]' />
           </Link>
           
         </div>
