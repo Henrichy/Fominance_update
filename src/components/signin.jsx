@@ -49,7 +49,7 @@ const Signin = () => {
               type="text"
               value={email}
               onChange={handleEmailChange}
-              className={`w-[548px] h-[54px] border-solid  border-[1px] mt-[10px] rounded-lg p-5 ${emailError ? 'border-red-500' : ''}`}
+              className={`w-[548px] h-[54px] border-solid  border-[1px] mt-[10px] border-gray-400 rounded-lg p-5 ${emailError ? 'border-red-500' : ''}`}
               
             />
             {emailError && (
@@ -60,7 +60,7 @@ const Signin = () => {
               type="password" 
               value={password}
               onChange={handlePasswordChange}
-              className='w-[548px] h-[54px] mt-[10px] border-solid border-[1px] rounded-lg p-5 focus:border-blue-200'
+              className='w-[548px] h-[54px] mt-[10px] border-solid border-[1px] rounded-lg p-5 focus:border-blue-200 border-gray-400'
               
             />
             <div className='text-right mt-[10px]'>

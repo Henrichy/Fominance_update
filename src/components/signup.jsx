@@ -1,94 +1,78 @@
 import React, { useState } from 'react';
-import rectan from '../assets/rectan.png';
-import formsign from '../assets/formsign.png';
-import MenAni from '../assets/MenAni.svg';
-import errorImage from '../assets/errorImage.png';
-import { Link } from 'react-router-dom'
+import Signup from './../assets/Signup.svg';
+import { Link } from 'react-router-dom';
 
-
-const SignUp = () => {
-  const [username, setUsername] = useState('');
+const SignupForm = () => {
   const [email, setEmail] = useState('');
-  const [password, setPassword] = useState('');
   const [errorMessage, setErrorMessage] = useState('');
-  const [emailError, setEmailError] = useState(false);
 
-  // Regex to check for "@" in the username
-  const usernameRegex = /@/;
-
-  const validateEmail = (email) => {
-    return email.includes('@') && email.endsWith('.com');
+  const handleEmailChange = (event) => {
+    setEmail(event.target.value);
+    if (errorMessage) {
+      setErrorMessage(''); // Clear error message when user is typing
+    }
   };
 
-  const handleSignUp = (e) => {
-    e.preventDefault();
-
-    // Username validation for "@"
-    if (!usernameRegex.test(username)) {
-      setErrorMessage('<img src="' + errorImage + '" alt="Error" />&nbsp; Email must contain @.');
-      return;
-    }
-
-    // Password validation: letters, numbers, and special characters
-    const passwordRegex = /^(?=.*[a-zA-Z])(?=.*[0-9])(?=.*[@$!%*#?&])[A-Za-z\d@$!%*#?&]{8,}$/;
-    if (!passwordRegex.test(password)) {
-      setErrorMessage('<img src="' + errorImage + '" alt="Error" />&nbsp; Password not strong. It should contain alphanumeric characters and special characters.');
-      return;
-    }
-
-    if (!validateEmail(email)) {
-        setEmailError(true);
+  const handleSignup = () => {
+    if (!email.includes('@')) {
+      setErrorMessage('Invalid email: Missing @ symbol.');
     } else {
-        setEmailError(false);
+      // Proceed with further validation or form submission
+      console.log("Form can be submitted now!");
     }
-
-    // If validation passes, you can proceed with signing up the user
-    // Add your sign-up logic here
   };
 
   return (
-    <div className='bg-loginbg flex'>
-      <div className='relative w-[40%]'>
-        <a href="/"> <img className='absolute top-10' src={formsign} alt="" /></a>
-        <img className='w-[88%] h-screen' src={rectan} alt="" />
-        <img className='absolute bottom-10' src={MenAni} alt="" />
+    <div className='flex bg-loginbg'>
+      <div>
+        <Link to='/'>
+        <img src={Signup} alt="" />
+        </Link>  
       </div>
 
-      <div className='py-6 pl-20 pr-16 w-[54%] '>
-        <div className='bg-white  flex p-10 flex-col items-center gap-2 rounded-2xl w-[644px] h-[566px] mt-[150px] mx-auto'>
-          <div><h2 className='text-2xl font-semibold'>Let Us get to know you!</h2></div>
-          <div><h2 className='font-semibold'>Tell us a bit about yourself. It’s super-simple, we Promise.</h2></div>
-          <form className='flex flex-col gap-6 mt-5 w-[546px]' onSubmit={handleSignUp} action='/signin.jsx' method='post'>
-            <div className='w-[100%] flex start flex-col'>    
-              <label className='mb-3' htmlFor="emailaddress">Email Address</label>
-                <input className="focus:outline-textfield bg-transparent w-[546px] h-[60px] border-solid border-gray-500  border-[1px] rounded-xl p-4 mx-auto" type="text" id="emailaddress" required value={email} onChange={(e) => setEmail(e.target.value)} />
-              </div>
-            {emailError && (
-              <p className="text-red-500 text-l  mt-2">⚠️  Incorrect email format</p>
-            )}
-            <div className='w-[100%] flex start flex-col'>    
-              <label className='mb-3' htmlFor="password">Password</label>
-             
-                <input className="focus:outline-textfield bg-transparent w-[546px] h-[60px] border-solid border-gray-500  border-[1px] rounded-xl p-4 mx-auto" type="password" id="password" required value={password} onChange={(e) => setPassword(e.target.value)} />
-              </div>
-            
-            <div className='text-right'>
-              <Link to="/forgot-password">
-                <span className='text-heroBlue'>Forgot password?</span>
+      <div className='bg-white rounded-2xl w-[644px] h-[566px] mx-auto my-auto flex flex-col p-[20px]'>
+        <div>
+          <div className='text-center'>
+            <h1 className='font-[500] text-[32px] leading-[38.73px] mt-[40px]'>
+              Let Us get to know you!
+            </h1>
+            <h3 className='font-[500] text-[20px] leading-[24.2px] mt-[20px]'>
+              Tell us a bit about yourself. It’s super-simple, we Promise.
+            </h3>
+          </div>
+          <div className='px-6 mt-[40px]'>
+            <p>Email</p>
+            <input
+              type="text"
+              className='w-[546px] h-[60px] border-solid border-[1px] border-gray-400 px-3 rounded-lg mt-[3px]'
+              value={email}
+              onChange={handleEmailChange}
+            />
+            {errorMessage && <p className='text-red-500'>{errorMessage}</p>}
+            <p className='mt-[20px]'>Password</p>
+            <input
+              type="password"
+              className='w-[546px] h-[60px] border-solid border-[1px] px-3 border-gray-400 rounded-lg mt-[3px]'
+            />
+          </div>
+          <div className='text-center mt-[50px]'>
+            <button
+              className='bg-heroBlue h-[48px] w-[380px] rounded-xl text-white font-[600] text-[20px] mb-[5px]'
+              onClick={handleSignup}
+            >
+              Sign Up
+            </button>
+            <p>
+              Already have an account?
+              <Link to='/signin'>
+                <span className='text-heroBlue'>Login here</span>
               </Link>
-            </div>
-            {errorMessage && <div className="text-red-600 flex" dangerouslySetInnerHTML={{ __html: errorMessage }}></div>}
-            
-
-            <div className='flex flex-col justify-center items-center mt-1'>
-              <input className='hover:opacity-[85%] transition-all duration-[0.3s] ease-linear  signbutton bg-heroBlue h-[48px] px-6 py-2 rounded-md font-semibold text-white w-[380px]'value='Sign Up' type="submit" />
-              <h3 className='text-sm mt-[10px]'>Already have an account? <a className='text-blue-600 mt-' href="/signin">Login Here</a> </h3>
-            </div>
-          </form>
+            </p>
+          </div>
         </div>
       </div>
     </div>
-  );
-};
+  )
+}
 
-export default SignUp;
+export default SignupForm;
